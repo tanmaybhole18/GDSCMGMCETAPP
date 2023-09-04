@@ -1,4 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import '../model/team_model.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -8,6 +13,29 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+ @override
+  void initState() {
+    super.initState();
+    loadTeamData();
+  }
+
+  Future<void> loadTeamData() async {
+    try {
+      await Future.delayed(Duration(seconds: 2));
+      final teamJson = await rootBundle.loadString("assets/team.json");
+      final decodedData = jsonDecode(teamJson);
+      final teamMembersData = decodedData["Team"];
+      setState(() {
+        TeamModel.teamMembers = List.from(teamMembersData)
+            .map<TeamMember>((item) => TeamMember.fromMap(item))
+            .toList();
+      });
+    } catch (error) {
+      print("Error loading team data: $error");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -171,8 +199,9 @@ class _HomePageState extends State<HomePage> {
         height: 300,
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: 5,
+            itemCount: TeamModel.teamMembers.length,
             itemBuilder: (context, index) {
+              final team = TeamModel.teamMembers[index];
               return Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: 20.0,
@@ -218,13 +247,13 @@ class _HomePageState extends State<HomePage> {
                         height: 5,
                       ),
                       Text(
-                        "Name",
+                        team.name,
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
                         height: 5,
                       ),
-                      Text("Post",
+                      Text(team.post,
                           style: TextStyle(fontWeight: FontWeight.bold)),
                       SizedBox(
                         height: 4,

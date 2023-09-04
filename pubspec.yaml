@@ -67,6 +67,8 @@ flutter:
    - assets/git.png
    - assets/linked.png
    - assets/twitter.jpeg
+   - assets/team.json
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

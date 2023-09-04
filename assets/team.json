@@ -1,0 +1,49 @@
+{
+    "Team": [
+        {
+            "id": 1,
+            "image": "https://example.com/avatar1.jpg",
+            "name": "John Doe",
+            "post": "Software Engineer",
+            "git": "https://github.com/johndoe",
+            "linked": "https://www.linkedin.com/in/johndoe",
+            "twitter": "https://twitter.com/johndoe"
+        },
+        {
+            "id": 2,
+            "image": "https://example.com/avatar2.jpg",
+            "name": "Jane Smith",
+            "post": "Data Scientist",
+            "git": "https://github.com/janesmith",
+            "linked": "https://www.linkedin.com/in/janesmith",
+            "twitter": "https://twitter.com/janesmith"
+        },
+        {
+            "id": 3,
+            "image": "https://example.com/avatar3.jpg",
+            "name": "Alice Johnson",
+            "post": "Product Manager",
+            "git": "https://github.com/alicejohnson",
+            "linked": "https://www.linkedin.com/in/alicejohnson",
+            "twitter": "https://twitter.com/alicejohnson"
+        },
+        {
+            "id": 4,
+            "image": "https://example.com/avatar4.jpg",
+            "name": "Bob Williams",
+            "post": "UX Designer",
+            "git": "https://github.com/bobwilliams",
+            "linked": "https://www.linkedin.com/in/bobwilliams",
+            "twitter": "https://twitter.com/bobwilliams"
+        },
+        {
+            "id": 5,
+            "image": "https://example.com/avatar5.jpg",
+            "name": "Eve Davis",
+            "post": "Marketing Manager",
+            "git": "https://github.com/evedavis",
+            "linked": "https://www.linkedin.com/in/evedavis",
+            "twitter": "https://twitter.com/evedavis"
+        }
+    ]
+}
