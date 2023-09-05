@@ -2,18 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-
 import '../model/team_model.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class TeamPage extends StatefulWidget {
+  const TeamPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<TeamPage> createState() => _TeamPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _TeamPageState extends State<TeamPage> {
   @override
   void initState() {
     super.initState();
@@ -55,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 15,
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
@@ -203,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                 ]),
               ),
               const SizedBox(
-                height: 20,
+                height: 5,
               ),
               Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -216,7 +214,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ]),
               const SizedBox(
-                height: 25,
+                height: 15,
               ),
               Expanded(
                 child: ListView.builder(
@@ -339,34 +337,6 @@ class _HomePageState extends State<HomePage> {
                     }),
               )
             ]),
-      ),
-      bottomNavigationBar: Container(
-        color: Colors.black,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
-          child: GNav(
-            gap: 8,
-            padding: const EdgeInsets.all(16),
-            backgroundColor: Colors.black,
-            color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
-            tabs: const [
-              GButton(
-                icon: Icons.groups,
-                text: 'Team',
-              ),
-              GButton(
-                icon: Icons.home_rounded,
-                text: 'Home',
-              ),
-              GButton(
-                icon: Icons.info_outline,
-                text: 'About Us',
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

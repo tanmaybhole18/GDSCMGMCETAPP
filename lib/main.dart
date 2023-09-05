@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gdsc/pages/home.dart';
 import 'package:gdsc/pages/home_page.dart';
 import 'package:gdsc/routes/route.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: MyRoutes.homeRoute,
       routes: {
-        MyRoutes.homeRoute: (context) => const HomePage(),
+        MyRoutes.homeRoute: (context) => const MyHomePage(),
       },
     );
   }
