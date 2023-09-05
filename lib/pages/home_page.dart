@@ -71,8 +71,8 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               child: ClipOval(
-                  child: Image.network(
-                'https://avatars.githubusercontent.com/u/76648609?v=4',
+                  child: Image.asset(
+                'assets/sahila.jpg',
                 fit: BoxFit.cover,
               )),
             ),

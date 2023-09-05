@@ -69,6 +69,7 @@ flutter:
    - assets/linked.png
    - assets/twitter.jpeg
    - assets/team.json
+   - assets/sahila.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
