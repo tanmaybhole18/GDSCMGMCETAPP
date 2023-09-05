@@ -50,133 +50,143 @@ class _HomePageState extends State<HomePage> {
         const SizedBox(
           height: 0,
         ),
-        Row(
-          children: [
-            const SizedBox(
-              width: 10,
-            ),
-            Image.asset(
-              'assets/GDSC left.png',
-              height: 70,
-              width: 70,
-            ),
-            Container(
-              height: 125,
-              width: 125,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: const Color.fromARGB(255, 0, 0, 0), // Border color
-                  width: 0.5, // Border width
-                ),
+        Container(
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Image.asset(
+                    'assets/GDSC left.png',
+                    height: 70,
+                    width: 70,
+                  ),
+                  Container(
+                    height: 125,
+                    width: 125,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color:
+                            const Color.fromARGB(255, 0, 0, 0), // Border color
+                        width: 0.5, // Border width
+                      ),
+                    ),
+                    child: ClipOval(
+                        child: Image.asset(
+                      'assets/sahila.jpg',
+                      fit: BoxFit.cover,
+                    )),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  ClipOval(
+                      child: Image.asset(
+                    'assets/sahil.jpg',
+                    height: 125,
+                    width: 125,
+                    fit: BoxFit.cover,
+                  )),
+                  Image.asset(
+                    'assets/GDSC right.png',
+                    height: 70,
+                    width: 70,
+                  ),
+                ],
               ),
-              child: ClipOval(
-                  child: Image.asset(
-                'assets/sahila.jpg',
-                fit: BoxFit.cover,
-              )),
-            ),
-            const SizedBox(
-              width: 10,
-            ),
-            ClipOval(
-                child: Image.asset(
-              'assets/sahil.jpg',
-              height: 125,
-              width: 125,
-              fit: BoxFit.cover,
-            )),
-            Image.asset(
-              'assets/GDSC right.png',
-              height: 70,
-              width: 70,
-            ),
-          ],
-        ),
-        const SizedBox(
-          height: 5,
-        ),
-        const Row(
-          children: [
-            SizedBox(
-              width: 100,
-            ),
-            Text(
-              "Sahil Ambure",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-            ),
-            SizedBox(
-              width: 50,
-            ),
-            Text(
-              "Sahil Bodke",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-            ),
-          ],
-        ),
-        const SizedBox(
-          height: 2,
-        ),
-        const Row(
-          children: [
-            SizedBox(
-              width: 130,
-            ),
-            Text(
-              "Lead",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              width: 92,
-            ),
-            Text(
-              "Co-Lead",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            )
-          ],
-        ),
-        const SizedBox(
-          height: 0,
-        ),
-        Row(
-          children: [
-            const SizedBox(
-              width: 85,
-            ),
-            SizedBox(
-                height: 40,
-                width: 40,
-                child: ClipOval(child: Image.asset('assets/git.png'))),
-            SizedBox(
-                height: 30,
-                width: 30,
-                child: ClipOval(child: Image.asset('assets/linked.png'))),
-            const SizedBox(
-              width: 8,
-            ),
-            SizedBox(
-                height: 30,
-                width: 30,
-                child: ClipOval(child: Image.asset('assets/twitter.jpeg'))),
-            const SizedBox(
-              width: 35,
-            ),
-            SizedBox(
-                height: 40,
-                width: 40,
-                child: ClipOval(child: Image.asset('assets/git.png'))),
-            SizedBox(
-                height: 30,
-                width: 30,
-                child: ClipOval(child: Image.asset('assets/linked.png'))),
-            const SizedBox(
-              width: 8,
-            ),
-            SizedBox(
-                height: 30,
-                width: 30,
-                child: ClipOval(child: Image.asset('assets/twitter.jpeg'))),
-          ],
+              const SizedBox(
+                height: 5,
+              ),
+              const Row(
+                children: [
+                  SizedBox(
+                    width: 100,
+                  ),
+                  Text(
+                    "Sahil Ambure",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  ),
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Text(
+                    "Sahil Bodke",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 2,
+              ),
+              const Row(
+                children: [
+                  SizedBox(
+                    width: 130,
+                  ),
+                  Text(
+                    "Lead",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    width: 92,
+                  ),
+                  Text(
+                    "Co-Lead",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 0,
+              ),
+              Row(
+                children: [
+                  const SizedBox(
+                    width: 85,
+                  ),
+                  SizedBox(
+                      height: 40,
+                      width: 40,
+                      child: ClipOval(child: Image.asset('assets/git.png'))),
+                  SizedBox(
+                      height: 30,
+                      width: 30,
+                      child: ClipOval(child: Image.asset('assets/linked.png'))),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  SizedBox(
+                      height: 30,
+                      width: 30,
+                      child:
+                          ClipOval(child: Image.asset('assets/twitter.jpeg'))),
+                  const SizedBox(
+                    width: 35,
+                  ),
+                  SizedBox(
+                      height: 40,
+                      width: 40,
+                      child: ClipOval(child: Image.asset('assets/git.png'))),
+                  SizedBox(
+                      height: 30,
+                      width: 30,
+                      child: ClipOval(child: Image.asset('assets/linked.png'))),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  SizedBox(
+                      height: 30,
+                      width: 30,
+                      child:
+                          ClipOval(child: Image.asset('assets/twitter.jpeg'))),
+                ],
+              ),
+            ],
+          ),
         ),
         const SizedBox(
           height: 20,
