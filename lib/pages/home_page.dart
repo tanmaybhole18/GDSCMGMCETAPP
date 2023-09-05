@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> loadTeamData() async {
     try {
-      await Future.delayed(Duration(seconds: 2));
+      await Future.delayed(const Duration(seconds: 2));
       final teamJson = await rootBundle.loadString("assets/team.json");
       final decodedData = jsonDecode(teamJson);
       final teamMembersData = decodedData["Team"];
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
             .toList();
       });
     } catch (error) {
-      print("Error loading team data: $error");
+      const InkWell();
     }
   }
 
@@ -206,7 +206,7 @@ class _HomePageState extends State<HomePage> {
                     width: 300,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Color.fromARGB(255, 182, 182, 182),
+                      color: const Color.fromARGB(255, 182, 182, 182),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -310,18 +310,18 @@ class _HomePageState extends State<HomePage> {
         )
       ]),
       bottomNavigationBar: Container(
-        height: 60,
+        height: 70,
         color: Colors.black,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
           child: GNav(
             gap: 8,
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             backgroundColor: Colors.black,
             color: Colors.white,
             activeColor: Colors.white,
             tabBackgroundColor: Colors.grey.shade800,
-            tabs: [
+            tabs: const [
               GButton(
                 icon: Icons.groups,
                 text: 'Team',
