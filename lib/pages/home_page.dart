@@ -50,8 +50,12 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
+            SizedBox(
+              height: 50,
+            ),
             Container(
               width: MediaQuery.of(context).size.width,
+              height: 270,
               child: Expanded(
                 child: Column(children: [
                   Row(
@@ -222,7 +226,7 @@ class _HomePageState extends State<HomePage> {
                       padding: const EdgeInsets.only(left: 10, bottom: 10),
                       child: Container(
                         height: 270,
-                        width: 300,
+                        width: 350,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: const Color.fromARGB(255, 182, 182, 182),
@@ -240,20 +244,20 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Image.asset(
                                   'assets/GDSC left.png',
-                                  height: 70,
-                                  width: 70,
+                                  height: 80,
+                                  width: 80,
                                 ),
                                 Container(
-                                  height: 120,
-                                  width: 120,
+                                  height: 140,
+                                  width: 140,
                                   decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white),
                                 ),
                                 Image.asset(
                                   'assets/GDSC right.png',
-                                  height: 70,
-                                  width: 70,
+                                  height: 80,
+                                  width: 80,
                                 ),
                               ],
                             ),
@@ -261,6 +265,7 @@ class _HomePageState extends State<HomePage> {
                               team.name,
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  fontSize: 18,
                                   color: Colors.white),
                             ),
                             const SizedBox(
@@ -269,6 +274,7 @@ class _HomePageState extends State<HomePage> {
                             Text(team.post,
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 18,
                                     color: Colors.white)),
                             const SizedBox(
                               height: 4,
@@ -278,14 +284,14 @@ class _HomePageState extends State<HomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(
-                                      height: 40,
-                                      width: 40,
+                                      height: 45,
+                                      width: 45,
                                       child: ClipOval(
                                           child:
                                               Image.asset('assets/git.png'))),
                                   SizedBox(
-                                      height: 30,
-                                      width: 30,
+                                      height: 40,
+                                      width: 40,
                                       child: ClipOval(
                                           child: Image.asset(
                                               'assets/linked.png'))),
@@ -293,19 +299,22 @@ class _HomePageState extends State<HomePage> {
                                     width: 8,
                                   ),
                                   SizedBox(
-                                      height: 30,
-                                      width: 30,
+                                      height: 40,
+                                      width: 40,
                                       child: ClipOval(
                                           child: Image.asset(
                                               'assets/twitter.jpeg'))),
                                 ]),
+                            const SizedBox(
+                              height: 3,
+                            ),
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  height: 35,
-                                  width: 70,
+                                  height: 40,
+                                  width: 75,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(20),
                                       color: Colors.blueAccent),
@@ -314,6 +323,7 @@ class _HomePageState extends State<HomePage> {
                                       "Team",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          fontSize: 17,
                                           color: Colors.white),
                                     ),
                                   ),
