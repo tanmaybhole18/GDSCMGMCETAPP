@@ -58,7 +58,7 @@ class _TeamPageState extends State<TeamPage> {
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
-                child: Leads(),
+                child: const Leads(),
               ),
               const SizedBox(
                 height: 30,
@@ -76,8 +76,8 @@ class _TeamPageState extends State<TeamPage> {
               const SizedBox(
                 height: 45,
               ),
-              Expanded(
-                child: TeamList(),
+               Expanded(
+                child:  TeamList(),
               ),
               const SizedBox(
                 height: 100,

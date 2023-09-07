@@ -8,20 +8,20 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Expanded(flex: 4, child: Heading()),
-      AboutUs(),
-      Expanded(
+      const Expanded(flex: 4, child: Heading()),
+      const AboutUs(),
+      const Expanded(
         flex: 1,
         child: HeadProfile(),
       ),
-      Expanded(
+      const Expanded(
         flex: 4,
         child: JoinUs(),
       ),
       SizedBox(
         height: 30,
         child: Container(
-          color: Color.fromARGB(255, 129, 201, 149),
+          color: const Color.fromARGB(255, 129, 201, 149),
         ),
       )
     ]);
@@ -36,11 +36,11 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(25),
               bottomRight: Radius.circular(25)),
-          color: const Color.fromARGB(255, 129, 201, 149),
+          color: Color.fromARGB(255, 129, 201, 149),
         ),
         padding: const EdgeInsets.all(20),
         alignment: Alignment.bottomLeft,
@@ -70,7 +70,7 @@ class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(25)),
         color: Colors.white,
       ),
@@ -151,12 +151,13 @@ class JoinUs extends StatelessWidget {
       'By becoming a part of the Google Student Council Group, you ll have the opportunity to:\nExpand your knowledge of cutting-edge technology.\nBuild a strong professional network. \nGain leadership experience.\nMake a positive impact on your campus and community.\nBe part of a supportive and diverse community of like-minded students.';
   @override
   Widget build(BuildContext context) {
-    return Container(
-        decoration: BoxDecoration(
+    var boxDecoration = const BoxDecoration(
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(25), topRight: Radius.circular(25)),
-          color: const Color.fromARGB(255, 129, 201, 149),
-        ),
+          color: Color.fromARGB(255, 129, 201, 149),
+        );
+    return Container(
+        decoration: boxDecoration,
         padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

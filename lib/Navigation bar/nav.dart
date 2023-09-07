@@ -5,7 +5,7 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
   final int currentIndex;
   final Function(int) onTap;
 
-  AnimatedNotchBottomNavigationBar({
+  const AnimatedNotchBottomNavigationBar({super.key, 
     required this.currentIndex,
     required this.onTap,
   });
@@ -21,7 +21,7 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
       bottomBarWidth: 500,
       durationInMilliSeconds: 300,
       bottomBarItems: [
-        BottomBarItem(
+        const BottomBarItem(
           inActiveItem: Icon(Icons.group),
           activeItem: Icon(Icons.group),
           itemLabel: 'Page 1',

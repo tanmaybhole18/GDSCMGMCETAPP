@@ -5,6 +5,7 @@ class Leads extends StatefulWidget {
   const Leads({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _LeadsState createState() => _LeadsState();
 }
 
@@ -20,7 +21,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _scaleAnimation = Tween<double>(
@@ -96,7 +97,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                     fit: BoxFit.cover,
                   ),
                 ),
-              ).animate().fade(delay: Duration(seconds: 1)),
+              ).animate().fade(delay: const Duration(seconds: 1)),
               const SizedBox(
                 width: 10,
               ),
@@ -107,7 +108,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                   width: 125,
                   fit: BoxFit.cover,
                 ),
-              ).animate().fade(delay: Duration(seconds: 1)),
+              ).animate().fade(delay: const Duration(seconds: 1)),
               AnimatedBuilder(
                 animation: _controller,
                 builder: (context, child) {
@@ -133,44 +134,44 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
       const SizedBox(
         height: 5,
       ),
-      const Row(
+       Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Sahil Ambure",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-          ),
-          SizedBox(
+          ).animate().fade(delay: const Duration(seconds: 1)),
+          const SizedBox(
             width: 60,
           ),
-          Text(
+          const Text(
             "Sahil Bodke",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-          ),
+          ).animate().fade(delay: const Duration(seconds: 1)),
         ],
       ),
       const SizedBox(
         height: 2,
       ),
-      const Row(
+       Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
+          const SizedBox(
             width: 15,
           ),
-          Text(
+          const Text(
             "Lead",
             style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          SizedBox(
+          ).animate().fade(delay: const Duration(seconds: 1)),
+          const SizedBox(
             width: 100,
           ),
-          Text(
+          const Text(
             "Co-Lead",
             style: TextStyle(fontWeight: FontWeight.bold),
-          )
+          ).animate().fade(delay: const Duration(seconds: 1)),
         ],
       ),
       const SizedBox(

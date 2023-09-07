@@ -49,15 +49,15 @@ class TeamList extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Text(
                     team.name,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                         color: Colors.white),
-                  ),
-                  const SizedBox(
-                    height: 5,
                   ),
                   Text(team.post,
                       style: const TextStyle(
