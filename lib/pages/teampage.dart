@@ -56,12 +56,12 @@ class _TeamPageState extends State<TeamPage> {
               const SizedBox(
                 height: 15,
               ),
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: Leads(),
               ),
               const SizedBox(
-                height: 5,
+                height: 15,
               ),
               Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -74,10 +74,13 @@ class _TeamPageState extends State<TeamPage> {
                     ),
                   ]),
               const SizedBox(
-                height: 15,
+                height: 35,
               ),
               Expanded(
                 child: TeamList(),
+              ),
+              const SizedBox(
+                height: 100,
               )
             ]),
       ),

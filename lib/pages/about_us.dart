@@ -7,9 +7,9 @@ class AboutPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [
+    return Column(children: [
       Expanded(flex: 4, child: Heading()),
-      Expanded(flex: 3, child: AboutUs()),
+      AboutUs(),
       Expanded(
         flex: 1,
         child: HeadProfile(),
@@ -18,10 +18,12 @@ class AboutPage extends StatelessWidget {
         flex: 4,
         child: JoinUs(),
       ),
-      //Heading()
-      //AboutUs()
-      //HeadProfile(),
-      //JoinUs(),
+      SizedBox(
+        height: 30,
+        child: Container(
+          color: Color.fromARGB(255, 129, 201, 149),
+        ),
+      )
     ]);
   }
 }
@@ -34,7 +36,12 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color.fromARGB(255, 129, 201, 149),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25)),
+          color: const Color.fromARGB(255, 129, 201, 149),
+        ),
         padding: const EdgeInsets.all(20),
         alignment: Alignment.bottomLeft,
         child: const Row(
@@ -63,7 +70,10 @@ class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(25)),
+        color: Colors.white,
+      ),
       padding: const EdgeInsets.all(20),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         const Text(
@@ -142,7 +152,11 @@ class JoinUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color.fromARGB(255, 129, 201, 149),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+          color: const Color.fromARGB(255, 129, 201, 149),
+        ),
         padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

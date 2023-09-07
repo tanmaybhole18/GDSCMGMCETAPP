@@ -10,9 +10,6 @@ class Leads extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(
-            width: 10,
-          ),
           Image.asset(
             'assets/GDSC left.png',
             height: 70,
