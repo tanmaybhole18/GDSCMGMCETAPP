@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gdsc/pages/home.dart';
-import 'package:gdsc/pages/home_page.dart';
 import 'package:gdsc/routes/route.dart';
 
 void main() {

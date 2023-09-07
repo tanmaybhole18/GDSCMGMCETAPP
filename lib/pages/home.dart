@@ -16,10 +16,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   /// Controller to handle PageView and also handles initial page
-  final _pageController = PageController(initialPage: 0);
+  final _pageController = PageController(initialPage: 1);
 
   /// Controller to handle bottom nav bar and also handles initial page
-  final _controller = NotchBottomBarController(index: 0);
+  final _controller = NotchBottomBarController(index: 1);
 
   int maxCount = 3;
 
