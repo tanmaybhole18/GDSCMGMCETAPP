@@ -1,5 +1,5 @@
-import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:gdsc/pages/eventpage.dart';
 import 'package:gdsc/pages/teampage.dart';
 
@@ -38,19 +38,34 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
+      body: PageView.builder(
         controller: _pageController,
-        physics: const NeverScrollableScrollPhysics(),
-        children: List.generate(
-            bottomBarPages.length, (index) => bottomBarPages[index]),
+        physics: NeverScrollableScrollPhysics(),
+        itemCount: bottomBarPages.length,
+        itemBuilder: (context, index) {
+          return AnimatedSwitcher(
+            duration: Duration(milliseconds: 500),
+            child: bottomBarPages[index],
+            switchInCurve: Curves.easeInOut,
+            switchOutCurve: Curves.easeInOut,
+          );
+        },
+        onPageChanged: (index) {
+          setState(() {
+            _controller.index = index;
+          });
+        },
       ),
       extendBody: true,
       bottomNavigationBar: AnimatedNotchBottomNavigationBar(
-        currentIndex:
-            _controller.index, // Pass the current index from your controller
+        currentIndex: _controller.index,
         onTap: (index) {
-          _controller.index = index; // Update the controller index
-          _pageController.jumpToPage(index); // Jump to the selected page
+          _controller.index = index;
+          _pageController.animateToPage(
+            index,
+            duration: Duration(milliseconds: 500), // Animation duration
+            curve: Curves.easeInOut, // Animation curve
+          );
         },
       ),
     );
