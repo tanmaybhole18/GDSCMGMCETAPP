@@ -47,21 +47,21 @@ class _TeamPageState extends State<TeamPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Padding(
-                padding: EdgeInsets.only(top: 40),
+                padding: EdgeInsets.only(top: 55),
                 child: Text(
                   "Our Team",
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                 ),
               ),
               const SizedBox(
-                height: 15,
+                height: 35,
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: Leads(),
               ),
               const SizedBox(
-                height: 15,
+                height: 30,
               ),
               Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -74,7 +74,7 @@ class _TeamPageState extends State<TeamPage> {
                     ),
                   ]),
               const SizedBox(
-                height: 35,
+                height: 45,
               ),
               Expanded(
                 child: TeamList(),

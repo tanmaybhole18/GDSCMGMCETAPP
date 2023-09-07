@@ -15,6 +15,7 @@ class TeamList extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.only(left: 10, bottom: 10),
             child: Container(
+              width: 330,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: const Color.fromARGB(255, 182, 182, 182),
@@ -64,7 +65,7 @@ class TeamList extends StatelessWidget {
                           fontSize: 18,
                           color: Colors.white)),
                   const SizedBox(
-                    height: 4,
+                    height: 7,
                   ),
                   Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -90,7 +91,7 @@ class TeamList extends StatelessWidget {
                                 child: Image.asset('assets/twitter.jpeg'))),
                       ]),
                   const SizedBox(
-                    height: 3,
+                    height: 7,
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
