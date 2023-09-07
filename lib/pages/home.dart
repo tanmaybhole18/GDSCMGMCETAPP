@@ -3,7 +3,6 @@ import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_not
 import 'package:flutter/material.dart';
 import 'package:gdsc/pages/eventpage.dart';
 import 'package:gdsc/pages/teampage.dart';
-import 'package:ionicons/ionicons.dart';
 
 import '../model/nav.dart';
 import 'about_us.dart';
@@ -41,15 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
 int appbarColorIndex = 0;
   @override
   Widget build(BuildContext context) {
-    final List appbarColor = <Color>[const Color.fromARGB(255,242,139,130),const Color.fromARGB(255,138,180,248,) , const Color.fromARGB(255, 129,201,149),];
+    
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: 
-        appbarColor[appbarColorIndex],
-        actions: [
-          IconButton(onPressed: (){}, icon: const Icon(Ionicons.search)), 
-          IconButton(onPressed: (){}, icon: const Icon(Ionicons.person_circle))
-        ],),
       body: PageView(
         controller: _pageController,
         physics: const NeverScrollableScrollPhysics(),
@@ -60,11 +52,7 @@ int appbarColorIndex = 0;
       bottomNavigationBar: AnimatedNotchBottomNavigationBar(
         currentIndex:
             _controller.index, // Pass the current index from your controller
-        onTap: (index) {
-        setState(() {                
-      appbarColorIndex = index;
-    });
-          
+        onTap: (index) {          
           _controller.index = index; // Update the controller index
           _pageController.jumpToPage(index); // Jump to the selected page
         },

@@ -10,7 +10,7 @@ class EventPage extends StatefulWidget {
 class _EventPageState extends State<EventPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(child: Text("Event Page")),
     );
   }
