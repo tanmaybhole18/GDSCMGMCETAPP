@@ -34,14 +34,13 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 200,
         color: const Color.fromARGB(255, 129, 201, 149),
         padding: const EdgeInsets.all(20),
         alignment: Alignment.bottomLeft,
         child: const Row(
           children: [
             Text(
-              "Google Devloper\nStudent Clubs",
+              "Google Developer\nStudent Clubs",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
             ),
             Spacer(),
@@ -164,12 +163,19 @@ class JoinUs extends StatelessWidget {
             Container(
               alignment: Alignment.bottomRight,
               child: Container(
-                color: Colors.blue,
+                height: 30,
+                width: 140,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  color: Colors.blue,
+                ),
                 padding: const EdgeInsets.fromLTRB(10, 4, 10, 4),
-                child: const Text(
-                  'Become a Member ',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.w500),
+                child: const Center(
+                  child: Text(
+                    'Become a Member ',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w500),
+                  ),
                 ),
               ),
             )

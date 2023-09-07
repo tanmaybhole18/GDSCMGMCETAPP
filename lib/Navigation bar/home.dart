@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:gdsc/pages/eventpage.dart';
 import 'package:gdsc/pages/teampage.dart';
 
-import '../model/nav.dart';
-import 'about_us.dart';
+import 'nav.dart';
+import '../pages/about_us.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -16,10 +16,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   /// Controller to handle PageView and also handles initial page
-  final _pageController = PageController(initialPage: 1);
+  final _pageController = PageController(initialPage: 0);
 
   /// Controller to handle bottom nav bar and also handles initial page
-  final _controller = NotchBottomBarController(index: 1);
+  final _controller = NotchBottomBarController(index: 0);
 
   int maxCount = 3;
 

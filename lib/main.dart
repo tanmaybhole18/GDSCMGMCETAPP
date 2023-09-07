@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gdsc/pages/home.dart';
+import 'package:gdsc/Navigation%20bar/home.dart';
 import 'package:gdsc/routes/route.dart';
 
 void main() {
