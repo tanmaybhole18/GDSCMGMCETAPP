@@ -4,11 +4,14 @@ import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_not
 class AnimatedNotchBottomNavigationBar extends StatelessWidget {
   final int currentIndex;
   final Function(int) onTap;
+  final List<Color> notchColors; // List of notch colors
 
-  const AnimatedNotchBottomNavigationBar({super.key, 
+  const AnimatedNotchBottomNavigationBar({
+    Key? key,
     required this.currentIndex,
     required this.onTap,
-  });
+    required this.notchColors, // Pass the list of notch colors
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +19,7 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
       notchBottomBarController: NotchBottomBarController(index: currentIndex),
       color: Colors.white,
       showLabel: false,
-      notchColor: const Color.fromARGB(221, 199, 199, 199),
+      notchColor: notchColors[currentIndex], // Use the notch color for the current index
       removeMargins: false,
       bottomBarWidth: 500,
       durationInMilliSeconds: 300,
