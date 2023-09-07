@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gdsc/pages/eventpage.dart';
 import 'package:gdsc/pages/teampage.dart';
+import 'package:ionicons/ionicons.dart';
 
 import '../model/nav.dart';
 import 'about_us.dart';
@@ -39,9 +40,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: 
+        const Color.fromARGB(255, 129,201,149),
+        //shadowColor: ,
+        //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        //title: Text(widget.title),
+        actions: [
+          IconButton(onPressed: (){}, icon: const Icon(Ionicons.search)), 
+          IconButton(onPressed: (){}, icon: const Icon(Ionicons.person_circle))
+        ],),
       body: PageView(
         controller: _pageController,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         children: List.generate(
             bottomBarPages.length, (index) => bottomBarPages[index]),
       ),

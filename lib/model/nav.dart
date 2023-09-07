@@ -21,7 +21,7 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
       bottomBarWidth: 500,
       durationInMilliSeconds: 300,
       bottomBarItems: [
-        BottomBarItem(
+        const BottomBarItem(
           inActiveItem: Icon(Icons.group),
           activeItem: Icon(Icons.group),
           itemLabel: 'Page 1',
@@ -43,6 +43,7 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
           inActiveItem: Image.asset('assets/GDSC LOGO.png'),
           activeItem: Image.asset('assets/GDSC LOGO.png'),
           itemLabel: 'Page 3',
+          
         ),
       ],
       onTap: onTap,
