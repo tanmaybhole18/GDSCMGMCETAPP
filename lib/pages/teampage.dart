@@ -39,49 +39,49 @@ class _TeamPageState extends State<TeamPage> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
-              ),
-              Text(
-                "Our Team",
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(
-                height: 35,
-              ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width,
-                child: const Leads(),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 2.0,
-                      width: 300,
-                      color: Colors.grey,
-                    ),
-                  ]),
-               SizedBox(
-                height: MediaQuery.of(context).size.height > 950 ? 125 : 150,
-              ),
-               Expanded(
-                child:  TeamList(),
-              ),
-               SizedBox(
-                height: MediaQuery.of(context).size.height > 950 ? 125 : 200,
-              )
-            ]),
-      );
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
+            ),
+            Text(
+              "Our Team",
+              style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 35,
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              child: const Leads(),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 2.0,
+                    width: 300,
+                    color: Colors.grey,
+                  ),
+                ]),
+            SizedBox(
+              height: MediaQuery.of(context).size.height > 950 ? 120 : 45,
+            ),
+            Expanded(
+              child: TeamList(),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height > 950 ? 130 : 100,
+            )
+          ]),
+    );
   }
 }
