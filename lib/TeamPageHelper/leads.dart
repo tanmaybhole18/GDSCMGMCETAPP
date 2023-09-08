@@ -82,8 +82,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                 ),
               ),
               Container(
-                height: 125,
-                width: 125,
+                height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
@@ -104,8 +104,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
               ClipOval(
                 child: Image.asset(
                   'assets/sahil.jpg',
-                  height: 125,
-                  width: 125,
+                  height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                  width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
                   fit: BoxFit.cover,
                 ),
               ).animate().fade(delay: const Duration(seconds: 1)),

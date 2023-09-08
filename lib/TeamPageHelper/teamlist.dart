@@ -35,8 +35,8 @@ class TeamList extends StatelessWidget {
                       width: 80,
                     ),
                     Container(
-                      height: 140,
-                      width: 140,
+                      height: MediaQuery.of(context).size.width > 411 ? 135 : 115,
+                      width: MediaQuery.of(context).size.width > 411 ? 135 : 115,
                       decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.white,

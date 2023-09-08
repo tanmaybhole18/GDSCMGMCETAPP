@@ -38,20 +38,19 @@ class _TeamPageState extends State<TeamPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SizedBox(
+    return SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 55),
-                child: Text(
-                  "Our Team",
-                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
-                ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
+              ),
+              Text(
+                "Our Team",
+                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 height: 35,
@@ -73,17 +72,16 @@ class _TeamPageState extends State<TeamPage> {
                       color: Colors.grey,
                     ),
                   ]),
-              const SizedBox(
-                height: 45,
+               SizedBox(
+                height: MediaQuery.of(context).size.height > 950 ? 125 : 150,
               ),
                Expanded(
                 child:  TeamList(),
               ),
-              const SizedBox(
-                height: 100,
+               SizedBox(
+                height: MediaQuery.of(context).size.height > 950 ? 125 : 200,
               )
             ]),
-      ),
-    );
+      );
   }
 }
