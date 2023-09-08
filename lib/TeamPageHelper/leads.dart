@@ -134,27 +134,27 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
       const SizedBox(
         height: 5,
       ),
-       Row(
+      Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
             "Sahil Ambure",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-          ).animate().fade(delay: const Duration(seconds: 1)),
+          ).animate().fade(delay: const Duration(milliseconds: 500)),
           const SizedBox(
             width: 60,
           ),
           const Text(
             "Sahil Bodke",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-          ).animate().fade(delay: const Duration(seconds: 1)),
+          ).animate().fade(delay: const Duration(milliseconds: 500)),
         ],
       ),
       const SizedBox(
         height: 2,
       ),
-       Row(
+      Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -164,14 +164,14 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
           const Text(
             "Lead",
             style: TextStyle(fontWeight: FontWeight.bold),
-          ).animate().fade(delay: const Duration(seconds: 1)),
+          ).animate().fade(delay: const Duration(milliseconds: 500)),
           const SizedBox(
             width: 100,
           ),
           const Text(
             "Co-Lead",
             style: TextStyle(fontWeight: FontWeight.bold),
-          ).animate().fade(delay: const Duration(seconds: 1)),
+          ).animate().fade(delay: const Duration(milliseconds: 500)),
         ],
       ),
       const SizedBox(
@@ -182,8 +182,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-              height: 40,
-              width: 40,
+              height: 47,
+              width: 47,
               child: ClipOval(child: Image.asset('assets/git.png'))),
           SizedBox(
               height: 30,
@@ -200,8 +200,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
             width: 35,
           ),
           SizedBox(
-              height: 40,
-              width: 40,
+              height: 47,
+              width: 47,
               child: ClipOval(child: Image.asset('assets/git.png'))),
           SizedBox(
               height: 30,
