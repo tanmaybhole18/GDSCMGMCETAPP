@@ -47,14 +47,14 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: PageView.builder(
         controller: _pageController,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         itemCount: bottomBarPages.length,
         itemBuilder: (context, index) {
           return AnimatedSwitcher(
-            duration: Duration(milliseconds: 500),
-            child: bottomBarPages[index],
+            duration: const Duration(milliseconds: 500),
             switchInCurve: Curves.easeInOut,
             switchOutCurve: Curves.easeInOut,
+            child: bottomBarPages[index],
           );
         },
         onPageChanged: (index) {
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
           _controller.index = index;
           _pageController.animateToPage(
             index,
-            duration: Duration(milliseconds: 500), // Animation duration
+            duration: const Duration(milliseconds: 500), // Animation duration
             curve: Curves.easeInOut, // Animation curve
           );
         },

@@ -16,7 +16,7 @@ class TeamList extends StatelessWidget {
             width: 370,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              color: Color.fromARGB(255, 255, 153, 153),
+              color: const Color.fromARGB(255, 255, 153, 153),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,

@@ -48,7 +48,7 @@ class _TeamPageState extends State<TeamPage> {
             SizedBox(
               height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
             ),
-            Text(
+            const Text(
               "Our Team",
               style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
             ),
