@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Leads extends StatefulWidget {
   const Leads({Key? key}) : super(key: key);
@@ -192,21 +193,35 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-              height: 47,
-              width: 47,
-              child: ClipOval(child: Image.asset('assets/git.png'))),
-          SizedBox(
-              height: 30,
-              width: 30,
-              child: ClipOval(child: Image.asset('assets/linked.png'))),
+          GestureDetector(
+            onTap: () {
+              launchUrl(
+                Uri.parse("https://github.com/sahilambure94"),
+                mode: LaunchMode.externalApplication,
+              );
+            },
+            child: SizedBox(
+                height: 47,
+                width: 47,
+                child: ClipOval(child: Image.asset('assets/git.png'))),
+          ),
+          GestureDetector(
+            onTap: () {},
+            child: SizedBox(
+                height: 30,
+                width: 30,
+                child: ClipOval(child: Image.asset('assets/linked.png'))),
+          ),
           const SizedBox(
             width: 8,
           ),
-          SizedBox(
-              height: 30,
-              width: 30,
-              child: ClipOval(child: Image.asset('assets/twitter.jpeg'))),
+          GestureDetector(
+            onTap: () {},
+            child: SizedBox(
+                height: 30,
+                width: 30,
+                child: ClipOval(child: Image.asset('assets/twitter.jpeg'))),
+          ),
           const SizedBox(
             width: 35,
           ),

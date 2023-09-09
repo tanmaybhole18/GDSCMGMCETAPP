@@ -152,10 +152,10 @@ class JoinUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var boxDecoration = const BoxDecoration(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(25), topRight: Radius.circular(25)),
-          color: Color.fromARGB(255, 129, 201, 149),
-        );
+      borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+      color: Color.fromARGB(255, 129, 201, 149),
+    );
     return Container(
         decoration: boxDecoration,
         padding: const EdgeInsets.all(20),

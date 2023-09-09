@@ -5,7 +5,7 @@
         "Tanmay Bhole": [
             {
                 "id": 1,
-                "image": "https://example.com/avatar1.jpg",
+                "image": "https://lh3.googleusercontent.com/a/ACg8ocL3eu8DphAd3nPiKRUPjPl_-mIXm5-Mz_7jwA1YSYjMwc4f=s360-c-no",
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
@@ -14,16 +14,16 @@
             },
             {
                 "id": 2,
-                "image": "https://example.com/avatar2.jpg",
+                "image": "https://media.licdn.com/dms/image/D5603AQFtDfT6Lde0Iw/profile-displayphoto-shrink_400_400/0/1689125941187?e=1699488000&v=beta&t=pex1aSZJzSaHrewMFUuMyaYa47ErNSUN_2Wc8mlUerQ",
                 "name": "Omkar Mandave",
                 "post": "Co Head",
-                "git": "https://github.com/janesmith",
-                "linked": "https://www.linkedin.com/in/janesmith",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/",
                 "twitter": "https://twitter.com/janesmith"
             },
             {
                 "id": 3,
-                "image": "https://example.com/avatar3.jpg",
+                "image": "https://media.licdn.com/dms/image/D5603AQFtDfT6Lde0Iw/profile-displayphoto-shrink_400_400/0/1689125941187?e=1699488000&v=beta&t=pex1aSZJzSaHrewMFUuMyaYa47ErNSUN_2Wc8mlUerQ",
                 "name": "Deepak Kamble",
                 "post": "Core Member",
                 "git": "https://github.com/alicejohnson",
@@ -32,7 +32,7 @@
             },
             {
                 "id": 4,
-                "image": "https://example.com/avatar4.jpg",
+                "image": "https://media.licdn.com/dms/image/D5603AQFtDfT6Lde0Iw/profile-displayphoto-shrink_400_400/0/1689125941187?e=1699488000&v=beta&t=pex1aSZJzSaHrewMFUuMyaYa47ErNSUN_2Wc8mlUerQ",
                 "name": "Jyoti Pal",
                 "post": "Core Member",
                 "git": "https://github.com/bobwilliams",

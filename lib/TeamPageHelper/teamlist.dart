@@ -36,8 +36,10 @@ class TeamList extends StatelessWidget {
                       width: 80,
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.width > 411 ? 135 : 115,
-                      width: MediaQuery.of(context).size.width > 411 ? 135 : 115,
+                      height:
+                          MediaQuery.of(context).size.width > 411 ? 135 : 115,
+                      width:
+                          MediaQuery.of(context).size.width > 411 ? 135 : 115,
                       decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.white,
@@ -76,28 +78,37 @@ class TeamList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: 55,
-                      width: 55,
-                      child: ClipOval(
-                        child: Image.asset('assets/git.png'),
+                    GestureDetector(
+                      onTap: () {},
+                      child: SizedBox(
+                        height: 55,
+                        width: 55,
+                        child: ClipOval(
+                          child: Image.asset('assets/git.png'),
+                        ),
                       ),
                     ),
-                    SizedBox(
-                      height: 40,
-                      width: 40,
-                      child: ClipOval(
-                        child: Image.asset('assets/linked.png'),
+                    GestureDetector(
+                      onTap: () {},
+                      child: SizedBox(
+                        height: 40,
+                        width: 40,
+                        child: ClipOval(
+                          child: Image.asset('assets/linked.png'),
+                        ),
                       ),
                     ),
                     const SizedBox(
                       width: 8,
                     ),
-                    SizedBox(
-                      height: 40,
-                      width: 40,
-                      child: ClipOval(
-                        child: Image.asset('assets/twitter.jpeg'),
+                    GestureDetector(
+                      onTap: () {},
+                      child: SizedBox(
+                        height: 40,
+                        width: 40,
+                        child: ClipOval(
+                          child: Image.asset('assets/twitter.jpeg'),
+                        ),
                       ),
                     ),
                   ],
@@ -112,11 +123,12 @@ class TeamList extends StatelessWidget {
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => TeamMemberDetailsPage(name: team.name),
-              ),
-            );
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                TeamMemberDetailsPage(name: team.name),
+                          ),
+                        );
                       },
                       child: Container(
                         height: 40,
