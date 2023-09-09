@@ -101,12 +101,23 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
               const SizedBox(
                 width: 10,
               ),
-              ClipOval(
-                child: Image.asset(
-                  'assets/sahil.jpg',
-                  height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                  width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                  fit: BoxFit.cover,
+              Container(
+                height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 0, 0, 0), // Border color
+                    width: 0.5, // Border width
+                  ),
+                ),
+                child: ClipOval(
+                  child: Image.asset(
+                    'assets/sahil.jpg',
+                    height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                    width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ).animate().fade(delay: const Duration(seconds: 1)),
               AnimatedBuilder(
