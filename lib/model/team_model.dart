@@ -2,12 +2,6 @@ import 'dart:convert';
 
 class TeamModel {
   static List<TeamMember> teamMembers = [];
-
-  TeamMember getById(int id) =>
-      // ignore: null_closures
-      teamMembers.firstWhere((element) => element.id == id, orElse: null);
-
-  TeamMember getByPosition(int pos) => teamMembers[pos];
 }
 
 class TeamMember {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart'; // Import the card_swiper package
 import '../model/team_model.dart';
+import '../pages/Teammember.dart';
 
 class TeamList extends StatelessWidget {
   const TeamList({Key? key});
@@ -108,20 +109,30 @@ class TeamList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                      height: 40,
-                      width: 75,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.blueAccent,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Team",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17,
-                            color: Colors.white,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => TeamMemberDetailsPage(name: team.name),
+              ),
+            );
+                      },
+                      child: Container(
+                        height: 40,
+                        width: 75,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.blueAccent,
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "Team",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 17,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),

@@ -1,0 +1,232 @@
+{
+    "school": {
+        "name": "Example School",
+        "location": "123 Main Street, Cityville",
+        "Tanmay Bhole": [
+            {
+                "id": 1,
+                "image": "https://example.com/avatar1.jpg",
+                "name": "Tanmay Bhole",
+                "post": "App Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/johndoe",
+                "twitter": "https://twitter.com/johndoe"
+            },
+            {
+                "id": 2,
+                "image": "https://example.com/avatar2.jpg",
+                "name": "Omkar Mandave",
+                "post": "Co Head",
+                "git": "https://github.com/janesmith",
+                "linked": "https://www.linkedin.com/in/janesmith",
+                "twitter": "https://twitter.com/janesmith"
+            },
+            {
+                "id": 3,
+                "image": "https://example.com/avatar3.jpg",
+                "name": "Deepak Kamble",
+                "post": "Core Member",
+                "git": "https://github.com/alicejohnson",
+                "linked": "https://www.linkedin.com/in/alicejohnson",
+                "twitter": "https://twitter.com/alicejohnson"
+            },
+            {
+                "id": 4,
+                "image": "https://example.com/avatar4.jpg",
+                "name": "Jyoti Pal",
+                "post": "Core Member",
+                "git": "https://github.com/bobwilliams",
+                "linked": "https://www.linkedin.com/in/bobwilliams",
+                "twitter": "https://twitter.com/bobwilliams"
+            }
+        ],
+        "Himanshu Bhoir": [
+            {
+                "id": 1,
+                "image": "https://example.com/avatar1.jpg",
+                "name": "Bhole",
+                "post": "App Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/johndoe",
+                "twitter": "https://twitter.com/johndoe"
+            },
+            {
+                "id": 2,
+                "image": "https://example.com/avatar2.jpg",
+                "name": "Bhoir",
+                "post": "Web Head",
+                "git": "https://github.com/janesmith",
+                "linked": "https://www.linkedin.com/in/janesmith",
+                "twitter": "https://twitter.com/janesmith"
+            },
+            {
+                "id": 3,
+                "image": "https://example.com/avatar3.jpg",
+                "name": "Mishra",
+                "post": "AI/ML Head",
+                "git": "https://github.com/alicejohnson",
+                "linked": "https://www.linkedin.com/in/alicejohnson",
+                "twitter": "https://twitter.com/alicejohnson"
+            },
+            {
+                "id": 4,
+                "image": "https://example.com/avatar4.jpg",
+                "name": "Kulkarni",
+                "post": "Teasure Head",
+                "git": "https://github.com/bobwilliams",
+                "linked": "https://www.linkedin.com/in/bobwilliams",
+                "twitter": "https://twitter.com/bobwilliams"
+            },
+            {
+                "id": 5,
+                "image": "https://example.com/avatar5.jpg",
+                "name": "Sacchi",
+                "post": "Creative Head",
+                "git": "https://github.com/evedavis",
+                "linked": "https://www.linkedin.com/in/evedavis",
+                "twitter": "https://twitter.com/evedavis"
+            }
+        ],
+        "Ritesh Mishra": [
+            {
+                "id": 1,
+                "image": "https://example.com/avatar1.jpg",
+                "name": "Tanmay Bhole",
+                "post": "App Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/johndoe",
+                "twitter": "https://twitter.com/johndoe"
+            },
+            {
+                "id": 2,
+                "image": "https://example.com/avatar2.jpg",
+                "name": "Himanshu Bhoir",
+                "post": "Web Head",
+                "git": "https://github.com/janesmith",
+                "linked": "https://www.linkedin.com/in/janesmith",
+                "twitter": "https://twitter.com/janesmith"
+            },
+            {
+                "id": 3,
+                "image": "https://example.com/avatar3.jpg",
+                "name": "Ritesh Mishra",
+                "post": "AI/ML Head",
+                "git": "https://github.com/alicejohnson",
+                "linked": "https://www.linkedin.com/in/alicejohnson",
+                "twitter": "https://twitter.com/alicejohnson"
+            },
+            {
+                "id": 4,
+                "image": "https://example.com/avatar4.jpg",
+                "name": "Shruti Kulkarni",
+                "post": "Teasure Head",
+                "git": "https://github.com/bobwilliams",
+                "linked": "https://www.linkedin.com/in/bobwilliams",
+                "twitter": "https://twitter.com/bobwilliams"
+            },
+            {
+                "id": 5,
+                "image": "https://example.com/avatar5.jpg",
+                "name": "Sacchi",
+                "post": "Creative Head",
+                "git": "https://github.com/evedavis",
+                "linked": "https://www.linkedin.com/in/evedavis",
+                "twitter": "https://twitter.com/evedavis"
+            }
+        ],
+        "Shruti Kulkarni": [
+            {
+                "id": 1,
+                "image": "https://example.com/avatar1.jpg",
+                "name": "Tanmay Bhole",
+                "post": "App Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/johndoe",
+                "twitter": "https://twitter.com/johndoe"
+            },
+            {
+                "id": 2,
+                "image": "https://example.com/avatar2.jpg",
+                "name": "Himanshu Bhoir",
+                "post": "Web Head",
+                "git": "https://github.com/janesmith",
+                "linked": "https://www.linkedin.com/in/janesmith",
+                "twitter": "https://twitter.com/janesmith"
+            },
+            {
+                "id": 3,
+                "image": "https://example.com/avatar3.jpg",
+                "name": "Ritesh Mishra",
+                "post": "AI/ML Head",
+                "git": "https://github.com/alicejohnson",
+                "linked": "https://www.linkedin.com/in/alicejohnson",
+                "twitter": "https://twitter.com/alicejohnson"
+            },
+            {
+                "id": 4,
+                "image": "https://example.com/avatar4.jpg",
+                "name": "Shruti Kulkarni",
+                "post": "Teasure Head",
+                "git": "https://github.com/bobwilliams",
+                "linked": "https://www.linkedin.com/in/bobwilliams",
+                "twitter": "https://twitter.com/bobwilliams"
+            },
+            {
+                "id": 5,
+                "image": "https://example.com/avatar5.jpg",
+                "name": "Sacchi",
+                "post": "Creative Head",
+                "git": "https://github.com/evedavis",
+                "linked": "https://www.linkedin.com/in/evedavis",
+                "twitter": "https://twitter.com/evedavis"
+            }
+        ],
+        "Sacchi": [
+            {
+                "id": 1,
+                "image": "https://example.com/avatar1.jpg",
+                "name": "Tanmay Bhole",
+                "post": "App Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/johndoe",
+                "twitter": "https://twitter.com/johndoe"
+            },
+            {
+                "id": 2,
+                "image": "https://example.com/avatar2.jpg",
+                "name": "Himanshu Bhoir",
+                "post": "Web Head",
+                "git": "https://github.com/janesmith",
+                "linked": "https://www.linkedin.com/in/janesmith",
+                "twitter": "https://twitter.com/janesmith"
+            },
+            {
+                "id": 3,
+                "image": "https://example.com/avatar3.jpg",
+                "name": "Ritesh Mishra",
+                "post": "AI/ML Head",
+                "git": "https://github.com/alicejohnson",
+                "linked": "https://www.linkedin.com/in/alicejohnson",
+                "twitter": "https://twitter.com/alicejohnson"
+            },
+            {
+                "id": 4,
+                "image": "https://example.com/avatar4.jpg",
+                "name": "Shruti Kulkarni",
+                "post": "Teasure Head",
+                "git": "https://github.com/bobwilliams",
+                "linked": "https://www.linkedin.com/in/bobwilliams",
+                "twitter": "https://twitter.com/bobwilliams"
+            },
+            {
+                "id": 5,
+                "image": "https://example.com/avatar5.jpg",
+                "name": "Sacchi",
+                "post": "Creative Head",
+                "git": "https://github.com/evedavis",
+                "linked": "https://www.linkedin.com/in/evedavis",
+                "twitter": "https://twitter.com/evedavis"
+            }
+        ]
+    }
+}
