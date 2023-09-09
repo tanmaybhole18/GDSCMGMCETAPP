@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Leads extends StatefulWidget {
@@ -150,16 +151,24 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text(
+           Text(
             "Sahil Ambure",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            style: GoogleFonts.forum(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
           const SizedBox(
             width: 60,
           ),
-          const Text(
+           Text(
             "Sahil Bodke",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            style: GoogleFonts.forum(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
         ],
       ),
@@ -173,16 +182,24 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
           const SizedBox(
             width: 15,
           ),
-          const Text(
+           Text(
             "Lead",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: GoogleFonts.forum(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
           const SizedBox(
             width: 100,
           ),
-          const Text(
+           Text(
             "Co-Lead",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: GoogleFonts.forum(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
         ],
       ),

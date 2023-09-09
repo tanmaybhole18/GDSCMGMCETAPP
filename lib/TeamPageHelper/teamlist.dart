@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart'; // Import the card_swiper package
+import 'package:google_fonts/google_fonts.dart';
 import '../model/team_model.dart';
 import '../pages/Teammember.dart';
 
@@ -40,9 +41,13 @@ class TeamList extends StatelessWidget {
                           MediaQuery.of(context).size.width > 411 ? 135 : 115,
                       width:
                           MediaQuery.of(context).size.width > 411 ? 135 : 115,
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.white,
+                        border: Border.all(
+                          color: Color.fromARGB(255, 0, 0, 0), // Border color
+                          width: 1, // Border width
+                        ),
                       ),
                     ),
                     Image.asset(
@@ -57,18 +62,18 @@ class TeamList extends StatelessWidget {
                 ),
                 Text(
                   team.name,
-                  style: const TextStyle(
+                  style: GoogleFonts.forum(
+                    color: Colors.black,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    color: Colors.white,
                   ),
                 ),
                 Text(
                   team.post,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
+                  style: GoogleFonts.forum(
+                    color: Colors.black,
                     fontSize: 18,
-                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(
@@ -137,13 +142,13 @@ class TeamList extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.blueAccent,
                         ),
-                        child: const Center(
+                        child: Center(
                           child: Text(
                             "Team",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 17,
+                            style: GoogleFonts.forum(
                               color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
