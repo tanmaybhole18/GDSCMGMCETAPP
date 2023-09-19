@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gdsc/TeamPageHelper/leads.dart';
 import 'package:gdsc/TeamPageHelper/teamlist.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../model/team_model.dart';
 
 class TeamPage extends StatefulWidget {
@@ -48,9 +49,13 @@ class _TeamPageState extends State<TeamPage> {
             SizedBox(
               height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
             ),
-            const Text(
+            Text(
               "Our Team",
-              style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+              style: GoogleFonts.forum(
+                color: Colors.black,
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             const SizedBox(
               height: 35,
