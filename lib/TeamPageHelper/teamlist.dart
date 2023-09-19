@@ -63,7 +63,7 @@ class TeamList extends StatelessWidget {
                 Text(
                   team.name,
                   style: GoogleFonts.forum(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -71,7 +71,7 @@ class TeamList extends StatelessWidget {
                 Text(
                   team.post,
                   style: GoogleFonts.forum(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),

@@ -49,12 +49,16 @@ class _TeamPageState extends State<TeamPage> {
             SizedBox(
               height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
             ),
-            Text(
-              "Our Team",
-              style: GoogleFonts.forum(
-                color: Colors.black,
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
+            Container(
+              padding: EdgeInsets.only(top: 3,bottom: 3,left: 8,right: 8),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Color.fromARGB(255, 255, 153, 153)),
+              child: Text(
+                "Our Team",
+                style: GoogleFonts.forum(
+                  color: Colors.white,
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             const SizedBox(
