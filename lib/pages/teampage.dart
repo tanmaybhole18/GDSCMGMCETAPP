@@ -24,7 +24,7 @@ class _TeamPageState extends State<TeamPage> {
   Future<void> loadTeamData() async {
     try {
       await Future.delayed(const Duration(seconds: 2));
-      final teamJson = await rootBundle.loadString("assets/team.json");
+      final teamJson = await rootBundle.loadString("assets/JSON/team.json");
       final decodedData = jsonDecode(teamJson);
       final teamMembersData = decodedData["Team"];
       setState(() {

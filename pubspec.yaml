@@ -68,17 +68,17 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/GDSC LOGO.png
-   - assets/GDSC left.png
-   - assets/GDSC right.png
-   - assets/sahil.jpg
-   - assets/git.png
-   - assets/linked.png
-   - assets/twitter.jpeg
-   - assets/team.json
-   - assets/sahila.jpg
-   - assets/icon.png
-   - assets/member.json
+   - assets/GDSC/GDSC LOGO.png
+   - assets/GDSC/GDSC left.png
+   - assets/GDSC/GDSC right.png
+   - assets/Leads/sahil.jpg
+   - assets/Leads/sahila.jpg
+   - assets/Icons/git.png
+   - assets/Icons/linked.png
+   - assets/Icons/twitter.jpeg
+   - assets/JSON/team.json
+   - assets/Icons/icon.png
+   - assets/JSON/member.json
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

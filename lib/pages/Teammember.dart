@@ -27,7 +27,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
 
   Future<void> _loadData() async {
     final jsonData =
-        await DefaultAssetBundle.of(context).loadString('assets/member.json');
+        await DefaultAssetBundle.of(context).loadString('assets/JSON/member.json');
     final data = json.decode(jsonData);
 
     setState(() {
@@ -72,7 +72,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/GDSC left.png',
+                              'assets/GDSC/GDSC left.png',
                               height: 80,
                               width: 80,
                             ),
@@ -95,7 +95,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                   child: Image.network(Mem[index]['image'])),
                             ),
                             Image.asset(
-                              'assets/GDSC right.png',
+                              'assets/GDSC/GDSC right.png',
                               height: 80,
                               width: 80,
                             ),
@@ -136,7 +136,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                 height: 55,
                                 width: 55,
                                 child: ClipOval(
-                                  child: Image.asset('assets/git.png'),
+                                  child: Image.asset('assets/Icons/git.png'),
                                 ),
                               ),
                             ),
@@ -151,7 +151,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                 height: 40,
                                 width: 40,
                                 child: ClipOval(
-                                  child: Image.asset('assets/linked.png'),
+                                  child: Image.asset('assets/Icons/linked.png'),
                                 ),
                               ),
                             ),
@@ -169,7 +169,8 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                 height: 40,
                                 width: 40,
                                 child: ClipOval(
-                                  child: Image.asset('assets/twitter.jpeg'),
+                                  child:
+                                      Image.asset('assets/Icons/twitter.jpeg'),
                                 ),
                               ),
                             ),

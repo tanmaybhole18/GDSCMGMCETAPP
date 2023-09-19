@@ -78,7 +78,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                   );
                 },
                 child: Image.asset(
-                  'assets/GDSC left.png',
+                  'assets/GDSC/GDSC left.png',
                   height: 70,
                   width: 70,
                 ),
@@ -95,7 +95,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                 ),
                 child: ClipOval(
                   child: Image.asset(
-                    'assets/sahila.jpg',
+                    'assets/Leads/sahila.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -115,7 +115,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                 ),
                 child: ClipOval(
                   child: Image.asset(
-                    'assets/sahil.jpg',
+                    'assets/Leads/sahil.jpg',
                     height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
                     width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
                     fit: BoxFit.cover,
@@ -135,7 +135,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                   );
                 },
                 child: Image.asset(
-                  'assets/GDSC right.png',
+                  'assets/GDSC/GDSC right.png',
                   height: 70,
                   width: 70,
                 ),
@@ -151,24 +151,24 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-           Text(
+          Text(
             "Sahil Ambure",
             style: GoogleFonts.forum(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+              color: Colors.black,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
           const SizedBox(
             width: 60,
           ),
-           Text(
+          Text(
             "Sahil Bodke",
             style: GoogleFonts.forum(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+              color: Colors.black,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
         ],
       ),
@@ -182,24 +182,24 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
           const SizedBox(
             width: 15,
           ),
-           Text(
+          Text(
             "Lead",
             style: GoogleFonts.forum(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+              color: Colors.black,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
           const SizedBox(
             width: 100,
           ),
-           Text(
+          Text(
             "Co-Lead",
             style: GoogleFonts.forum(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+              color: Colors.black,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
         ],
       ),
@@ -220,14 +220,14 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
             child: SizedBox(
                 height: 47,
                 width: 47,
-                child: ClipOval(child: Image.asset('assets/git.png'))),
+                child: ClipOval(child: Image.asset('assets/Icons/git.png'))),
           ),
           GestureDetector(
             onTap: () {},
             child: SizedBox(
                 height: 30,
                 width: 30,
-                child: ClipOval(child: Image.asset('assets/linked.png'))),
+                child: ClipOval(child: Image.asset('assets/Icons/linked.png'))),
           ),
           const SizedBox(
             width: 8,
@@ -237,7 +237,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
             child: SizedBox(
                 height: 30,
                 width: 30,
-                child: ClipOval(child: Image.asset('assets/twitter.jpeg'))),
+                child:
+                    ClipOval(child: Image.asset('assets/Icons/twitter.jpeg'))),
           ),
           const SizedBox(
             width: 35,
@@ -245,18 +246,18 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
           SizedBox(
               height: 47,
               width: 47,
-              child: ClipOval(child: Image.asset('assets/git.png'))),
+              child: ClipOval(child: Image.asset('assets/Icons/git.png'))),
           SizedBox(
               height: 30,
               width: 30,
-              child: ClipOval(child: Image.asset('assets/linked.png'))),
+              child: ClipOval(child: Image.asset('assets/Icons/linked.png'))),
           const SizedBox(
             width: 8,
           ),
           SizedBox(
               height: 30,
               width: 30,
-              child: ClipOval(child: Image.asset('assets/twitter.jpeg'))),
+              child: ClipOval(child: Image.asset('assets/Icons/twitter.jpeg'))),
         ],
       ),
     ]);

@@ -19,7 +19,8 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
       notchBottomBarController: NotchBottomBarController(index: currentIndex),
       color: Colors.white,
       showLabel: false,
-      notchColor: notchColors[currentIndex], // Use the notch color for the current index
+      notchColor: notchColors[
+          currentIndex], // Use the notch color for the current index
       removeMargins: false,
       bottomBarWidth: 500,
       durationInMilliSeconds: 300,
@@ -31,20 +32,20 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
         ),
         BottomBarItem(
           inActiveItem: Image.asset(
-            'assets/icon.png',
+            'assets/Icons/icon.png',
             height: 40,
             width: 40,
           ),
           activeItem: Image.asset(
-            'assets/icon.png',
+            'assets/Icons/icon.png',
             height: 40,
             width: 40,
           ),
           itemLabel: 'Page 2',
         ),
         BottomBarItem(
-          inActiveItem: Image.asset('assets/GDSC LOGO.png'),
-          activeItem: Image.asset('assets/GDSC LOGO.png'),
+          inActiveItem: Image.asset('assets/GDSC/GDSC LOGO.png'),
+          activeItem: Image.asset('assets/GDSC/GDSC LOGO.png'),
           itemLabel: 'Page 3',
         ),
       ],

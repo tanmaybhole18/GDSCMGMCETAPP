@@ -32,7 +32,7 @@ class TeamList extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/GDSC left.png',
+                      'assets/GDSC/GDSC left.png',
                       height: 80,
                       width: 80,
                     ),
@@ -51,7 +51,7 @@ class TeamList extends StatelessWidget {
                       ),
                     ),
                     Image.asset(
-                      'assets/GDSC right.png',
+                      'assets/GDSC/GDSC right.png',
                       height: 80,
                       width: 80,
                     ),
@@ -89,7 +89,7 @@ class TeamList extends StatelessWidget {
                         height: 55,
                         width: 55,
                         child: ClipOval(
-                          child: Image.asset('assets/git.png'),
+                          child: Image.asset('assets/Icons/git.png'),
                         ),
                       ),
                     ),
@@ -99,7 +99,7 @@ class TeamList extends StatelessWidget {
                         height: 40,
                         width: 40,
                         child: ClipOval(
-                          child: Image.asset('assets/linked.png'),
+                          child: Image.asset('assets/Icons/linked.png'),
                         ),
                       ),
                     ),
@@ -112,7 +112,7 @@ class TeamList extends StatelessWidget {
                         height: 40,
                         width: 40,
                         child: ClipOval(
-                          child: Image.asset('assets/twitter.jpeg'),
+                          child: Image.asset('assets/Icons/twitter.jpeg'),
                         ),
                       ),
                     ),
