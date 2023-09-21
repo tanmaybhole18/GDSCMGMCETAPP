@@ -47,29 +47,29 @@ class _TeamPageState extends State<TeamPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height > 700 ? 45 : 5,
+              height: MediaQuery.of(context).size.height > 750 ? 45 : 5,
             ),
             Container(
-              padding: EdgeInsets.only(top: 3,bottom: 3,left: 8,right: 8),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Color.fromARGB(255, 255, 153, 153)),
+              padding: const EdgeInsets.only(top: 3,bottom: 3,left: 8,right: 8),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: const Color.fromARGB(255, 255, 153, 153)),
               child: Text(
                 "Our Team",
                 style: GoogleFonts.forum(
                   color: Colors.white,
-                  fontSize: 35,
+                  fontSize: MediaQuery.of(context).size.height > 750 ? 35 :25,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            const SizedBox(
-              height: 35,
+            SizedBox(
+              height: MediaQuery.of(context).size.height > 750 ? 35 :25,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: const Leads(),
             ),
-            const SizedBox(
-              height: 30,
+             SizedBox(
+              height: MediaQuery.of(context).size.height > 750 ? 30 :10,
             ),
             Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -82,7 +82,7 @@ class _TeamPageState extends State<TeamPage> {
                   ),
                 ]),
             SizedBox(
-              height: MediaQuery.of(context).size.height > 950 ? 120 : 45,
+              height: MediaQuery.of(context).size.height > 950 ? 120 :MediaQuery.of(context).size.height > 850 ? 45 : 25,
             ),
             Expanded(
               child: TeamList(),

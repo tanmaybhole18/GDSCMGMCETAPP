@@ -5,7 +5,7 @@
         "Tanmay Bhole": [
             {
                 "id": 1,
-                "image": "https://lh3.googleusercontent.com/a/ACg8ocL3eu8DphAd3nPiKRUPjPl_-mIXm5-Mz_7jwA1YSYjMwc4f=s360-c-no",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
@@ -14,7 +14,7 @@
             },
             {
                 "id": 2,
-                "image": "https://media.licdn.com/dms/image/D5603AQFtDfT6Lde0Iw/profile-displayphoto-shrink_400_400/0/1689125941187?e=1699488000&v=beta&t=pex1aSZJzSaHrewMFUuMyaYa47ErNSUN_2Wc8mlUerQ",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Omkar Mandave",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
@@ -23,7 +23,7 @@
             },
             {
                 "id": 3,
-                "image": "https://media.licdn.com/dms/image/D5603AQFtDfT6Lde0Iw/profile-displayphoto-shrink_400_400/0/1689125941187?e=1699488000&v=beta&t=pex1aSZJzSaHrewMFUuMyaYa47ErNSUN_2Wc8mlUerQ",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Deepak Kamble",
                 "post": "Core Member",
                 "git": "https://github.com/alicejohnson",
@@ -32,7 +32,7 @@
             },
             {
                 "id": 4,
-                "image": "https://media.licdn.com/dms/image/D5603AQFtDfT6Lde0Iw/profile-displayphoto-shrink_400_400/0/1689125941187?e=1699488000&v=beta&t=pex1aSZJzSaHrewMFUuMyaYa47ErNSUN_2Wc8mlUerQ",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Jyoti Pal",
                 "post": "Core Member",
                 "git": "https://github.com/bobwilliams",
@@ -43,7 +43,7 @@
         "Himanshu Bhoir": [
             {
                 "id": 1,
-                "image": "https://example.com/avatar1.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
@@ -52,7 +52,7 @@
             },
             {
                 "id": 2,
-                "image": "https://example.com/avatar2.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Bhoir",
                 "post": "Web Head",
                 "git": "https://github.com/janesmith",
@@ -61,7 +61,7 @@
             },
             {
                 "id": 3,
-                "image": "https://example.com/avatar3.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Mishra",
                 "post": "AI/ML Head",
                 "git": "https://github.com/alicejohnson",
@@ -70,7 +70,7 @@
             },
             {
                 "id": 4,
-                "image": "https://example.com/avatar4.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Kulkarni",
                 "post": "Teasure Head",
                 "git": "https://github.com/bobwilliams",
@@ -79,7 +79,7 @@
             },
             {
                 "id": 5,
-                "image": "https://example.com/avatar5.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Sacchi",
                 "post": "Creative Head",
                 "git": "https://github.com/evedavis",
@@ -90,7 +90,7 @@
         "Ritesh Mishra": [
             {
                 "id": 1,
-                "image": "https://example.com/avatar1.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
@@ -99,7 +99,7 @@
             },
             {
                 "id": 2,
-                "image": "https://example.com/avatar2.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Himanshu Bhoir",
                 "post": "Web Head",
                 "git": "https://github.com/janesmith",
@@ -108,7 +108,7 @@
             },
             {
                 "id": 3,
-                "image": "https://example.com/avatar3.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Ritesh Mishra",
                 "post": "AI/ML Head",
                 "git": "https://github.com/alicejohnson",
@@ -117,7 +117,7 @@
             },
             {
                 "id": 4,
-                "image": "https://example.com/avatar4.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Shruti Kulkarni",
                 "post": "Teasure Head",
                 "git": "https://github.com/bobwilliams",
@@ -126,7 +126,7 @@
             },
             {
                 "id": 5,
-                "image": "https://example.com/avatar5.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Sacchi",
                 "post": "Creative Head",
                 "git": "https://github.com/evedavis",
@@ -137,7 +137,7 @@
         "Shruti Kulkarni": [
             {
                 "id": 1,
-                "image": "https://example.com/avatar1.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
@@ -146,7 +146,7 @@
             },
             {
                 "id": 2,
-                "image": "https://example.com/avatar2.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Himanshu Bhoir",
                 "post": "Web Head",
                 "git": "https://github.com/janesmith",
@@ -155,7 +155,7 @@
             },
             {
                 "id": 3,
-                "image": "https://example.com/avatar3.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Ritesh Mishra",
                 "post": "AI/ML Head",
                 "git": "https://github.com/alicejohnson",
@@ -164,7 +164,7 @@
             },
             {
                 "id": 4,
-                "image": "https://example.com/avatar4.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Shruti Kulkarni",
                 "post": "Teasure Head",
                 "git": "https://github.com/bobwilliams",
@@ -173,7 +173,7 @@
             },
             {
                 "id": 5,
-                "image": "https://example.com/avatar5.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Sacchi",
                 "post": "Creative Head",
                 "git": "https://github.com/evedavis",
@@ -184,7 +184,7 @@
         "Sacchi": [
             {
                 "id": 1,
-                "image": "https://example.com/avatar1.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
@@ -193,7 +193,7 @@
             },
             {
                 "id": 2,
-                "image": "https://example.com/avatar2.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Himanshu Bhoir",
                 "post": "Web Head",
                 "git": "https://github.com/janesmith",
@@ -202,7 +202,7 @@
             },
             {
                 "id": 3,
-                "image": "https://example.com/avatar3.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Ritesh Mishra",
                 "post": "AI/ML Head",
                 "git": "https://github.com/alicejohnson",
@@ -211,7 +211,7 @@
             },
             {
                 "id": 4,
-                "image": "https://example.com/avatar4.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Shruti Kulkarni",
                 "post": "Teasure Head",
                 "git": "https://github.com/bobwilliams",
@@ -220,7 +220,7 @@
             },
             {
                 "id": 5,
-                "image": "https://example.com/avatar5.jpg",
+                "image": "assets/Teams/App Dev/omk.png",
                 "name": "Sacchi",
                 "post": "Creative Head",
                 "git": "https://github.com/evedavis",

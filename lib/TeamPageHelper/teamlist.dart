@@ -5,11 +5,14 @@ import '../model/team_model.dart';
 import '../pages/Teammember.dart';
 
 class TeamList extends StatelessWidget {
-  const TeamList({Key? key});
+  const TeamList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Swiper(
+      autoplay: true,
+      autoplayDisableOnInteraction: true,
+      containerWidth: MediaQuery.of(context).size.width,
       itemBuilder: (BuildContext context, int index) {
         final team = TeamModel.teamMembers[index];
         return Padding(
@@ -33,27 +36,36 @@ class TeamList extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/GDSC/GDSC left.png',
-                      height: 80,
-                      width: 80,
+                      height:
+                          MediaQuery.of(context).size.height < 650 ? 60 : 80,
+                      width: MediaQuery.of(context).size.height < 650 ? 60 : 80,
                     ),
                     Container(
-                      height:
-                          MediaQuery.of(context).size.width > 411 ? 135 : 115,
-                      width:
-                          MediaQuery.of(context).size.width > 411 ? 135 : 115,
+                      height: MediaQuery.of(context).size.height < 650
+                          ? 90
+                          : MediaQuery.of(context).size.width > 411
+                              ? 135
+                              : 115,
+                      width: MediaQuery.of(context).size.height < 650
+                          ? 90
+                          : MediaQuery.of(context).size.width > 411
+                              ? 135
+                              : 115,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.white,
                         border: Border.all(
-                          color: Color.fromARGB(255, 0, 0, 0), // Border color
+                          color: const Color.fromARGB(
+                              255, 0, 0, 0), // Border color
                           width: 1, // Border width
                         ),
                       ),
                     ),
                     Image.asset(
                       'assets/GDSC/GDSC right.png',
-                      height: 80,
-                      width: 80,
+                      height:
+                          MediaQuery.of(context).size.height < 650 ? 60 : 80,
+                      width: MediaQuery.of(context).size.height < 650 ? 60 : 80,
                     ),
                   ],
                 ),
@@ -64,7 +76,8 @@ class TeamList extends StatelessWidget {
                   team.name,
                   style: GoogleFonts.forum(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize:
+                        MediaQuery.of(context).size.height < 650 ? 15 : 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -72,7 +85,8 @@ class TeamList extends StatelessWidget {
                   team.post,
                   style: GoogleFonts.forum(
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize:
+                        MediaQuery.of(context).size.height < 650 ? 13 : 18,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -86,8 +100,10 @@ class TeamList extends StatelessWidget {
                     GestureDetector(
                       onTap: () {},
                       child: SizedBox(
-                        height: 55,
-                        width: 55,
+                        height:
+                            MediaQuery.of(context).size.height < 650 ? 45 : 55,
+                        width:
+                            MediaQuery.of(context).size.height < 650 ? 45 : 55,
                         child: ClipOval(
                           child: Image.asset('assets/Icons/git.png'),
                         ),
@@ -96,8 +112,10 @@ class TeamList extends StatelessWidget {
                     GestureDetector(
                       onTap: () {},
                       child: SizedBox(
-                        height: 40,
-                        width: 40,
+                        height:
+                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
+                        width:
+                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
                         child: ClipOval(
                           child: Image.asset('assets/Icons/linked.png'),
                         ),
@@ -109,8 +127,10 @@ class TeamList extends StatelessWidget {
                     GestureDetector(
                       onTap: () {},
                       child: SizedBox(
-                        height: 40,
-                        width: 40,
+                        height:
+                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
+                        width:
+                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
                         child: ClipOval(
                           child: Image.asset('assets/Icons/twitter.jpeg'),
                         ),
@@ -136,7 +156,7 @@ class TeamList extends StatelessWidget {
                         );
                       },
                       child: Container(
-                        height: 40,
+                        height: MediaQuery.of(context).size.height < 650 ? 35 :40,
                         width: 75,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -147,7 +167,7 @@ class TeamList extends StatelessWidget {
                             "Team",
                             style: GoogleFonts.forum(
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: MediaQuery.of(context).size.height < 650 ? 14 :18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),

@@ -80,6 +80,10 @@ flutter:
    - assets/JSON/team.json
    - assets/Icons/icon.png
    - assets/JSON/member.json
+   - assets/Teams/App Dev/omkar.jpg
+   - assets/Teams/App Dev/omk.png
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

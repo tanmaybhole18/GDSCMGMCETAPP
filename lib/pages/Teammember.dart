@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 class TeamMemberDetailsPage extends StatefulWidget {
   final String name;
 
-  TeamMemberDetailsPage({
+  const TeamMemberDetailsPage({
     Key? key,
     required this.name,
   }) : super(key: key);
@@ -26,8 +25,8 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
   }
 
   Future<void> _loadData() async {
-    final jsonData =
-        await DefaultAssetBundle.of(context).loadString('assets/JSON/member.json');
+    final jsonData = await DefaultAssetBundle.of(context)
+        .loadString('assets/JSON/member.json');
     final data = json.decode(jsonData);
 
     setState(() {
@@ -54,15 +53,19 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
           itemCount: Mem.length,
           itemBuilder: (context, index) {
             return Padding(
-                padding: EdgeInsets.all(20), // Add spacing here
+                padding: const EdgeInsets.only(
+                    top: 20,
+                    left: 20,
+                    right: 20,
+                    bottom: 5), // Add spacing here
                 child: Card(
                   elevation: 5,
-                  color: Color.fromARGB(255, 168, 224, 233),
+                  color: const Color.fromARGB(255, 168, 224, 233),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Container(
-                    padding: EdgeInsets.all(25),
+                    padding: const EdgeInsets.all(25),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -86,13 +89,13 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 border: Border.all(
-                                  color: Color.fromARGB(
+                                  color: const Color.fromARGB(
                                       255, 0, 0, 0), // Border color
                                   width: 1, // Border width
                                 ),
                               ),
                               child: ClipOval(
-                                  child: Image.network(Mem[index]['image'])),
+                                  child: Image.asset(Mem[index]['image'])),
                             ),
                             Image.asset(
                               'assets/GDSC/GDSC right.png',
@@ -107,6 +110,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                         Text(
                           Mem[index]['name'],
                           style: GoogleFonts.forum(
+                            color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
@@ -114,6 +118,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                         Text(
                           Mem[index]['post'],
                           style: GoogleFonts.forum(
+                            color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),

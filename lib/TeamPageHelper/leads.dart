@@ -148,9 +148,10 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         height: 5,
       ),
       Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width > 360 ? 87 : 73,
+          ),
           Text(
             "Sahil Ambure",
             style: GoogleFonts.forum(
@@ -159,8 +160,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
               fontWeight: FontWeight.bold,
             ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
-          const SizedBox(
-            width: 60,
+          SizedBox(
+            width: MediaQuery.of(context).size.width > 360 ? 47 : 23,
           ),
           Text(
             "Sahil Bodke",
@@ -176,11 +177,9 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         height: 2,
       ),
       Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(
-            width: 15,
+          SizedBox(
+            width: MediaQuery.of(context).size.width > 360 ? 117 : 103,
           ),
           Text(
             "Lead",
@@ -190,8 +189,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
               fontWeight: FontWeight.bold,
             ),
           ).animate().fade(delay: const Duration(milliseconds: 500)),
-          const SizedBox(
-            width: 100,
+          SizedBox(
+            width: MediaQuery.of(context).size.width > 360 ? 88 : 65,
           ),
           Text(
             "Co-Lead",
@@ -207,9 +206,10 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
         height: 0,
       ),
       Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width > 360 ? 70 : 55,
+          ),
           GestureDetector(
             onTap: () {
               launchUrl(
@@ -240,8 +240,8 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                 child:
                     ClipOval(child: Image.asset('assets/Icons/twitter.jpeg'))),
           ),
-          const SizedBox(
-            width: 35,
+          SizedBox(
+            width: MediaQuery.of(context).size.width > 360 ? 23 : 5,
           ),
           SizedBox(
               height: 47,
