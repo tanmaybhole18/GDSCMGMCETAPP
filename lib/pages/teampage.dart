@@ -50,33 +50,48 @@ class _TeamPageState extends State<TeamPage> {
               height: MediaQuery.of(context).size.height > 750 ? 45 : 5,
             ),
             Container(
-              padding: const EdgeInsets.only(top: 3,bottom: 3,left: 8,right: 8),
-              decoration: BoxDecoration(gradient: const LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color.fromARGB(255, 255, 153, 153),
-                Color.fromARGB(255, 210, 61, 237)
-              ], // Adjust colors as needed
-            ),borderRadius: BorderRadius.circular(25)),
+              padding:
+                  const EdgeInsets.only(top: 3, bottom: 3, left: 8, right: 8),
+              decoration: BoxDecoration(
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Colors.blueAccent,
+                        offset: Offset(4, 4),
+                        blurRadius: 15,
+                        spreadRadius: 1),
+                    BoxShadow(
+                        color: Color.fromARGB(255, 40, 163, 9),
+                        offset: Offset(-4, -4),
+                        blurRadius: 15,
+                        spreadRadius: 1)
+                  ],
+                  gradient: const LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color.fromARGB(255, 255, 153, 153),
+                      Color.fromARGB(255, 210, 61, 237)
+                    ], // Adjust colors as needed
+                  ),
+                  borderRadius: BorderRadius.circular(25)),
               child: Text(
                 "Our Team",
                 style: GoogleFonts.forum(
                   color: Colors.white,
-                  fontSize: MediaQuery.of(context).size.height > 750 ? 35 :25,
+                  fontSize: MediaQuery.of(context).size.height > 750 ? 35 : 25,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height > 750 ? 35 :25,
+              height: MediaQuery.of(context).size.height > 750 ? 35 : 25,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: const Leads(),
             ),
-             SizedBox(
-              height: MediaQuery.of(context).size.height > 750 ? 30 :10,
+            SizedBox(
+              height: MediaQuery.of(context).size.height > 750 ? 30 : 10,
             ),
             Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -89,7 +104,11 @@ class _TeamPageState extends State<TeamPage> {
                   ),
                 ]),
             SizedBox(
-              height: MediaQuery.of(context).size.height > 950 ? 120 :MediaQuery.of(context).size.height > 850 ? 45 : 25,
+              height: MediaQuery.of(context).size.height > 950
+                  ? 120
+                  : MediaQuery.of(context).size.height > 850
+                      ? 45
+                      : 25,
             ),
             Expanded(
               child: TeamList(),

@@ -105,6 +105,18 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 shape: BoxShape.circle,
+                                boxShadow: const [
+                                  BoxShadow(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      offset: Offset(1, 1),
+                                      blurRadius: 15,
+                                      spreadRadius: 1),
+                                  BoxShadow(
+                                      color: Color.fromARGB(255, 9, 68, 163),
+                                      offset: Offset(-1, -1),
+                                      blurRadius: 15,
+                                      spreadRadius: 1)
+                                ],
                                 border: Border.all(
                                   color: const Color.fromARGB(255, 0, 0, 0),
                                   width: 1,
@@ -121,7 +133,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        SizedBox(height: 10),
                         Text(
                           Mem[index]['name'],
                           style: GoogleFonts.forum(
@@ -141,6 +153,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                         ),
                         SizedBox(height: 20),
                         Container(
+                          width: 170,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
                             gradient: LinearGradient(

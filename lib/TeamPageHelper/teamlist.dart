@@ -4,9 +4,14 @@ import 'package:google_fonts/google_fonts.dart';
 import '../model/team_model.dart';
 import '../pages/Teammember.dart';
 
-class TeamList extends StatelessWidget {
+class TeamList extends StatefulWidget {
   const TeamList({super.key});
 
+  @override
+  State<TeamList> createState() => _TeamListState();
+}
+
+class _TeamListState extends State<TeamList> {
   @override
   Widget build(BuildContext context) {
     return Swiper(
@@ -64,6 +69,13 @@ class TeamList extends StatelessWidget {
                               : 110,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
+                        boxShadow: const [
+                          BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(4, 4),
+                              blurRadius: 15,
+                              spreadRadius: 1),
+                        ],
                         color: Colors.white,
                         border: Border.all(
                           color: const Color.fromARGB(
@@ -151,13 +163,26 @@ class TeamList extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Container(
+                      child: AnimatedContainer(
                         height: 40,
                         width: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
+                          boxShadow: const [
+                            BoxShadow(
+                                color: Colors.blueAccent,
+                                offset: Offset(4, 4),
+                                blurRadius: 15,
+                                spreadRadius: 1),
+                            BoxShadow(
+                                color: Color.fromARGB(255, 210, 61, 237),
+                                offset: Offset(-4, -4),
+                                blurRadius: 15,
+                                spreadRadius: 1)
+                          ],
                           color: Colors.blueAccent,
                         ),
+                        duration: Duration(milliseconds: 200),
                         child: Center(
                           child: Text(
                             "Team",
