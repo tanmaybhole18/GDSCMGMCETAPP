@@ -51,7 +51,14 @@ class _TeamPageState extends State<TeamPage> {
             ),
             Container(
               padding: const EdgeInsets.only(top: 3,bottom: 3,left: 8,right: 8),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: const Color.fromARGB(255, 255, 153, 153)),
+              decoration: BoxDecoration(gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Color.fromARGB(255, 255, 153, 153),
+                Color.fromARGB(255, 210, 61, 237)
+              ], // Adjust colors as needed
+            ),borderRadius: BorderRadius.circular(25)),
               child: Text(
                 "Our Team",
                 style: GoogleFonts.forum(

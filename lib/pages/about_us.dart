@@ -19,7 +19,7 @@ class AboutPage extends StatelessWidget {
                   : 2,
           child: Heading()),
       const AboutUs(),
-      const Expanded(
+      Expanded(
         flex: 1,
         child: SocialMediaLinks(),
       ),
@@ -112,7 +112,11 @@ class AboutUs extends StatelessWidget {
         Text(aboutUs,
             style: GoogleFonts.forum(
               color: Colors.black,
-              fontSize: MediaQuery.of(context).size.height > 950 ? 17 : MediaQuery.of(context).size.height > 850 ? 15 : 14,
+              fontSize: MediaQuery.of(context).size.height > 950
+                  ? 17
+                  : MediaQuery.of(context).size.height > 850
+                      ? 15
+                      : 14,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.justify),
@@ -122,51 +126,111 @@ class AboutUs extends StatelessWidget {
 }
 
 class SocialMediaLinks extends StatelessWidget {
-  const SocialMediaLinks({
-    super.key,
-  });
+  SocialMediaLinks({
+    Key? key,
+  }) : super(key: key);
+
+  final List<Map<String, dynamic>> socialMediaItems = [
+    {
+      'url': 'https://www.instagram.com/',
+      'icon': Ionicons.logo_instagram,
+    },
+    {
+      'url': 'https://www.twitter.com/',
+      'icon': Ionicons.logo_twitter,
+    },
+    {
+      'url': 'https://www.youtube.com/',
+      'icon': Ionicons.logo_youtube,
+    },
+    {
+      'url': 'https://www.discord.com/',
+      'icon': Ionicons.logo_discord,
+    },
+    {
+      'url': 'https://www.facebook.com/',
+      'icon': Ionicons.logo_facebook,
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            socialMediaLogo(
-                'https://www.instagram.com/', Ionicons.logo_instagram),
-            socialMediaLogo(
-                'https://www.instagram.com/', Ionicons.logo_twitter),
-            socialMediaLogo(
-                'https://www.instagram.com/', Ionicons.logo_youtube),
-            socialMediaLogo(
-                'https://www.instagram.com/', Ionicons.logo_discord),
-            socialMediaLogo(
-                'https://www.instagram.com/', Ionicons.logo_facebook),
-          ],
-        )); // profile
-  }
-
-  GestureDetector socialMediaLogo(final String url, final IconData icon_) {
-    return GestureDetector(
-      child: Container(
-        height: 50,
-        width: 50,
-        decoration: const BoxDecoration(
-            color: Color.fromARGB(255, 0, 0, 0), shape: BoxShape.circle),
-        child: Icon(
-          icon_,
-          color: Colors.white,
-        ),
+      color: Colors.white,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: socialMediaItems
+            .map(
+              (item) => SocialMediaLogo(
+                url: item['url'],
+                icon: item['icon'],
+              ),
+            )
+            .toList(),
       ),
+    );
+  }
+}
+
+class SocialMediaLogo extends StatelessWidget {
+  final String url;
+  final IconData icon;
+
+  const SocialMediaLogo({
+    Key? key,
+    required this.url,
+    required this.icon,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
       onTap: () {
         launchUrl(
           Uri.parse(url),
           mode: LaunchMode.externalApplication,
         );
       },
+      child: Card(
+        elevation: 4, // Adjust the elevation as needed
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(25.0),
+        ),
+        child: Container(
+          height: 50,
+          width: 50,
+          decoration: BoxDecoration(
+            color: Colors.black, // Background color
+            shape: BoxShape.circle,
+          ),
+          child: Icon(
+            icon,
+            color: Colors.white, // Icon color
+          ),
+        ),
+      ),
     );
   }
+}
+GestureDetector socialMediaLogo(final String url, final IconData icon_) {
+  return GestureDetector(
+    child: Container(
+      height: 50,
+      width: 50,
+      decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 0, 0, 0), shape: BoxShape.circle),
+      child: Icon(
+        icon_,
+        color: Colors.white,
+      ),
+    ),
+    onTap: () {
+      launchUrl(
+        Uri.parse(url),
+        mode: LaunchMode.externalApplication,
+      );
+    },
+  );
 }
 
 class JoinUs extends StatelessWidget {
@@ -203,30 +267,39 @@ class JoinUs extends StatelessWidget {
               joinUsText,
               style: GoogleFonts.forum(
                 color: Colors.white,
-                fontSize: MediaQuery.of(context).size.height > 950 ? 16 :MediaQuery.of(context).size.height > 850 ? 15 : 13,
+                fontSize: MediaQuery.of(context).size.height > 950
+                    ? 16
+                    : MediaQuery.of(context).size.height > 850
+                        ? 15
+                        : 13,
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.justify,
-              strutStyle: StrutStyle(height: MediaQuery.of(context).size.height > 850 ? 1.2 :1),
+              strutStyle: StrutStyle(
+                  height: MediaQuery.of(context).size.height > 850 ? 1.2 : 1),
             ),
             Container(
               alignment: Alignment.bottomRight,
               child: Container(
-                height: MediaQuery.of(context).size.height > 650 ? 30 :25,
+                height: MediaQuery.of(context).size.height > 650 ? 30 : 25,
                 width: 140,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5)),
                   color: Colors.blue,
                 ),
                 padding: const EdgeInsets.fromLTRB(10, 4, 10, 4),
-                child:  Center(
+                child: Center(
                   child: Text(
                     'Become a Member ',
                     style: GoogleFonts.forum(
-                color: Colors.white,
-                fontSize: MediaQuery.of(context).size.height > 950 ? 16 :MediaQuery.of(context).size.height > 850 ? 15 : 13,
-                fontWeight: FontWeight.bold,
-              ),
+                      color: Colors.white,
+                      fontSize: MediaQuery.of(context).size.height > 950
+                          ? 16
+                          : MediaQuery.of(context).size.height > 850
+                              ? 15
+                              : 13,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

@@ -80,6 +80,7 @@ flutter:
    - assets/JSON/team.json
    - assets/Icons/icon.png
    - assets/JSON/member.json
+   - assets/Teams/App Dev/Tanmay Bhole.jpg
    - assets/Teams/App Dev/omkar.jpg
    - assets/Teams/App Dev/omk.png
    - assets/Teams/App Dev/Deepak kamble.jpg
