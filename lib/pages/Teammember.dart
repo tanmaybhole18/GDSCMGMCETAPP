@@ -87,6 +87,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                   ? 135
                                   : 110,
                               decoration: BoxDecoration(
+                                color: Colors.white,
                                 shape: BoxShape.circle,
                                 border: Border.all(
                                   color: const Color.fromARGB(
@@ -115,6 +116,9 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                                                const SizedBox(
+                          height: 4,
+                        ),
                         Text(
                           Mem[index]['post'],
                           style: GoogleFonts.forum(
@@ -130,52 +134,39 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            GestureDetector(
-                              onTap: () {
-                                launchUrl(
-                                  Uri.parse(Mem[index]['git']),
-                                  mode: LaunchMode.externalApplication,
-                                );
-                              },
-                              child: SizedBox(
-                                height: 55,
-                                width: 55,
-                                child: ClipOval(
-                                  child: Image.asset('assets/Icons/git.png'),
+                            Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse(Mem[index]['git']),
+                                    mode: LaunchMode.externalApplication,
+                                  );
+                                },
+                                child: SizedBox(
+                                  height: 40,
+                                  width: 40,
+                                  child: ClipOval(
+                                    child: Image.asset('assets/Icons/git.png'),
+                                  ),
                                 ),
                               ),
                             ),
-                            GestureDetector(
-                              onTap: () {
-                                launchUrl(
-                                  Uri.parse(Mem[index]['linked']),
-                                  mode: LaunchMode.externalApplication,
-                                );
-                              },
-                              child: SizedBox(
-                                height: 40,
-                                width: 40,
-                                child: ClipOval(
-                                  child: Image.asset('assets/Icons/linked.png'),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(
-                              width: 8,
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                launchUrl(
-                                  Uri.parse(Mem[index]['twitter']),
-                                  mode: LaunchMode.externalApplication,
-                                );
-                              },
-                              child: SizedBox(
-                                height: 40,
-                                width: 40,
-                                child: ClipOval(
-                                  child:
-                                      Image.asset('assets/Icons/twitter.jpeg'),
+                            Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: GestureDetector(
+                                onTap: () {
+                                  launchUrl(
+                                    Uri.parse(Mem[index]['linked']),
+                                    mode: LaunchMode.externalApplication,
+                                  );
+                                },
+                                child: SizedBox(
+                                  height: 40,
+                                  width: 40,
+                                  child: ClipOval(
+                                    child: Image.asset('assets/Icons/linked.png'),
+                                  ),
                                 ),
                               ),
                             ),

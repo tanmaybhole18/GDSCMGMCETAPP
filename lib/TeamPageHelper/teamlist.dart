@@ -60,6 +60,7 @@ class TeamList extends StatelessWidget {
                           width: 1, // Border width
                         ),
                       ),
+                      child: ClipOval(child: Image.asset(team.image)),
                     ),
                     Image.asset(
                       'assets/GDSC/GDSC right.png',
@@ -101,13 +102,16 @@ class TeamList extends StatelessWidget {
                       onTap: () {},
                       child: SizedBox(
                         height:
-                            MediaQuery.of(context).size.height < 650 ? 45 : 55,
+                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
                         width:
-                            MediaQuery.of(context).size.height < 650 ? 45 : 55,
+                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
                         child: ClipOval(
                           child: Image.asset('assets/Icons/git.png'),
                         ),
                       ),
+                    ),
+                    SizedBox(
+                      width: 10,
                     ),
                     GestureDetector(
                       onTap: () {},
@@ -120,22 +124,7 @@ class TeamList extends StatelessWidget {
                           child: Image.asset('assets/Icons/linked.png'),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      width: 8,
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: SizedBox(
-                        height:
-                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
-                        width:
-                            MediaQuery.of(context).size.height < 650 ? 30 : 40,
-                        child: ClipOval(
-                          child: Image.asset('assets/Icons/twitter.jpeg'),
-                        ),
-                      ),
-                    ),
+                    )
                   ],
                 ),
                 const SizedBox(
@@ -156,7 +145,8 @@ class TeamList extends StatelessWidget {
                         );
                       },
                       child: Container(
-                        height: MediaQuery.of(context).size.height < 650 ? 35 :40,
+                        height:
+                            MediaQuery.of(context).size.height < 650 ? 35 : 40,
                         width: 75,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -167,7 +157,9 @@ class TeamList extends StatelessWidget {
                             "Team",
                             style: GoogleFonts.forum(
                               color: Colors.white,
-                              fontSize: MediaQuery.of(context).size.height < 650 ? 14 :18,
+                              fontSize: MediaQuery.of(context).size.height < 650
+                                  ? 14
+                                  : 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),

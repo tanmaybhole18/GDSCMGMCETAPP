@@ -59,205 +59,256 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Column(children: [
       Stack(
-        alignment: Alignment.center,
         children: [
           Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              AnimatedBuilder(
-                animation: _controller,
-                builder: (context, child) {
-                  return Transform.scale(
-                    scale: _scaleAnimation.value, // Apply the scale animation
-                    child: Transform.translate(
-                      offset: Offset(_positionAnimation.value,
-                          0.0), // Apply the X-axis translation
-                      child: child,
+              Column(
+                children: [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height > 950
+                        ? 15
+                        : MediaQuery.of(context).size.height > 900
+                            ? 25
+                            : MediaQuery.of(context).size.height > 850
+                                ? 30
+                                : MediaQuery.of(context).size.height > 799
+                                    ? 15
+                                    : MediaQuery.of(context).size.height > 699
+                                        ? 25
+                                        : 15,
+                  ),
+                  AnimatedBuilder(
+                    animation: _controller,
+                    builder: (context, child) {
+                      return Transform.scale(
+                        scale:
+                            _scaleAnimation.value, // Apply the scale animation
+                        child: Transform.translate(
+                          offset: Offset(_positionAnimation.value,
+                              0.0), // Apply the X-axis translation
+                          child: child,
+                        ),
+                      );
+                    },
+                    child: Image.asset(
+                      'assets/GDSC/GDSC left.png',
+                      height: 70,
+                      width: 70,
                     ),
-                  );
-                },
-                child: Image.asset(
-                  'assets/GDSC/GDSC left.png',
-                  height: 70,
-                  width: 70,
-                ),
+                  ),
+                ],
               ),
-              Container(
-                height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: const Color.fromARGB(255, 0, 0, 0), // Border color
-                    width: 0.5, // Border width
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                    width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color:
+                            const Color.fromARGB(255, 0, 0, 0), // Border color
+                        width: 0.5, // Border width
+                      ),
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/Leads/sahila.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ).animate().fade(delay: const Duration(seconds: 1)),
+                  SizedBox(
+                    height: 5,
                   ),
-                ),
-                child: ClipOval(
-                  child: Image.asset(
-                    'assets/Leads/sahila.jpg',
-                    fit: BoxFit.cover,
+                  Text(
+                    "Sahil Ambure",
+                    style: GoogleFonts.forum(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ).animate().fade(delay: const Duration(milliseconds: 500)),
+                  Text(
+                    "Lead",
+                    style: GoogleFonts.forum(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ).animate().fade(delay: const Duration(milliseconds: 500)),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(
+                            5.0), // Adjust the padding as needed
+                        child: GestureDetector(
+                          onTap: () {
+                            launchUrl(
+                              Uri.parse("https://github.com/sahilambure94"),
+                              mode: LaunchMode.externalApplication,
+                            );
+                          },
+                          child: SizedBox(
+                            height: 30,
+                            width: 30,
+                            child: ClipOval(
+                              child: Image.asset('assets/Icons/git.png'),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(
+                            5.0), // Adjust the padding as needed
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: SizedBox(
+                            height: 30,
+                            width: 30,
+                            child: ClipOval(
+                              child: Image.asset('assets/Icons/linked.png'),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-              ).animate().fade(delay: const Duration(seconds: 1)),
+                ],
+              ),
               const SizedBox(
                 width: 10,
               ),
-              Container(
-                height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: const Color.fromARGB(255, 0, 0, 0), // Border color
-                    width: 0.5, // Border width
-                  ),
-                ),
-                child: ClipOval(
-                  child: Image.asset(
-                    'assets/Leads/sahil.jpg',
+              Column(
+                children: [
+                  Container(
                     height: MediaQuery.of(context).size.width > 411 ? 125 : 100,
                     width: MediaQuery.of(context).size.width > 411 ? 125 : 100,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ).animate().fade(delay: const Duration(seconds: 1)),
-              AnimatedBuilder(
-                animation: _controller,
-                builder: (context, child) {
-                  return Transform.scale(
-                    scale: _scaleAnimation1.value, // Apply the scale animation
-                    child: Transform.translate(
-                      offset: Offset(_positionAnimation1.value,
-                          0.0), // Apply the X-axis translation
-                      child: child,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color:
+                            const Color.fromARGB(255, 0, 0, 0), // Border color
+                        width: 0.5, // Border width
+                      ),
                     ),
-                  );
-                },
-                child: Image.asset(
-                  'assets/GDSC/GDSC right.png',
-                  height: 70,
-                  width: 70,
-                ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/Leads/sahil.jpg',
+                        height:
+                            MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                        width:
+                            MediaQuery.of(context).size.width > 411 ? 125 : 100,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ).animate().fade(delay: const Duration(seconds: 1)),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    "Sahil Bodke",
+                    style: GoogleFonts.forum(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ).animate().fade(delay: const Duration(milliseconds: 500)),
+                  Text(
+                    "Co-Lead",
+                    style: GoogleFonts.forum(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ).animate().fade(delay: const Duration(milliseconds: 500)),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(
+                            5.0), // Adjust the padding as needed
+                        child: GestureDetector(
+                          onTap: () {
+                            launchUrl(
+                              Uri.parse("https://github.com/sahilambure94"),
+                              mode: LaunchMode.externalApplication,
+                            );
+                          },
+                          child: SizedBox(
+                            height: 30,
+                            width: 30,
+                            child: ClipOval(
+                              child: Image.asset('assets/Icons/git.png'),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(
+                            5.0), // Adjust the padding as needed
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: SizedBox(
+                            height: 30,
+                            width: 30,
+                            child: ClipOval(
+                              child: Image.asset('assets/Icons/linked.png'),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height > 950
+                        ? 15
+                        : MediaQuery.of(context).size.height > 900
+                            ? 25
+                            : MediaQuery.of(context).size.height > 850
+                                ? 30
+                                : MediaQuery.of(context).size.height > 799
+                                    ? 15
+                                    : MediaQuery.of(context).size.height > 699
+                                        ? 25
+                                        : 15,
+                  ),
+                  AnimatedBuilder(
+                    animation: _controller,
+                    builder: (context, child) {
+                      return Transform.scale(
+                        scale:
+                            _scaleAnimation1.value, // Apply the scale animation
+                        child: Transform.translate(
+                          offset: Offset(_positionAnimation1.value,
+                              0.0), // Apply the X-axis translation
+                          child: child,
+                        ),
+                      );
+                    },
+                    child: Image.asset(
+                      'assets/GDSC/GDSC right.png',
+                      height: 70,
+                      width: 70,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
-      ),
-      const SizedBox(
-        height: 5,
-      ),
-      Row(
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width > 360 ? 87 : 73,
-          ),
-          Text(
-            "Sahil Ambure",
-            style: GoogleFonts.forum(
-              color: Colors.black,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ).animate().fade(delay: const Duration(milliseconds: 500)),
-          SizedBox(
-            width: MediaQuery.of(context).size.width > 360 ? 47 : 23,
-          ),
-          Text(
-            "Sahil Bodke",
-            style: GoogleFonts.forum(
-              color: Colors.black,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ).animate().fade(delay: const Duration(milliseconds: 500)),
-        ],
-      ),
-      const SizedBox(
-        height: 2,
-      ),
-      Row(
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width > 360 ? 117 : 103,
-          ),
-          Text(
-            "Lead",
-            style: GoogleFonts.forum(
-              color: Colors.black,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ).animate().fade(delay: const Duration(milliseconds: 500)),
-          SizedBox(
-            width: MediaQuery.of(context).size.width > 360 ? 88 : 65,
-          ),
-          Text(
-            "Co-Lead",
-            style: GoogleFonts.forum(
-              color: Colors.black,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-          ).animate().fade(delay: const Duration(milliseconds: 500)),
-        ],
-      ),
-      const SizedBox(
-        height: 0,
-      ),
-      Row(
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width > 360 ? 70 : 55,
-          ),
-          GestureDetector(
-            onTap: () {
-              launchUrl(
-                Uri.parse("https://github.com/sahilambure94"),
-                mode: LaunchMode.externalApplication,
-              );
-            },
-            child: SizedBox(
-                height: 47,
-                width: 47,
-                child: ClipOval(child: Image.asset('assets/Icons/git.png'))),
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: SizedBox(
-                height: 30,
-                width: 30,
-                child: ClipOval(child: Image.asset('assets/Icons/linked.png'))),
-          ),
-          const SizedBox(
-            width: 8,
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: SizedBox(
-                height: 30,
-                width: 30,
-                child:
-                    ClipOval(child: Image.asset('assets/Icons/twitter.jpeg'))),
-          ),
-          SizedBox(
-            width: MediaQuery.of(context).size.width > 360 ? 23 : 5,
-          ),
-          SizedBox(
-              height: 47,
-              width: 47,
-              child: ClipOval(child: Image.asset('assets/Icons/git.png'))),
-          SizedBox(
-              height: 30,
-              width: 30,
-              child: ClipOval(child: Image.asset('assets/Icons/linked.png'))),
-          const SizedBox(
-            width: 8,
-          ),
-          SizedBox(
-              height: 30,
-              width: 30,
-              child: ClipOval(child: Image.asset('assets/Icons/twitter.jpeg'))),
         ],
       ),
     ]);

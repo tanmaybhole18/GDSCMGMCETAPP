@@ -1,7 +1,5 @@
 {
     "school": {
-        "name": "Example School",
-        "location": "123 Main Street, Cityville",
         "Tanmay Bhole": [
             {
                 "id": 1,
@@ -9,8 +7,7 @@
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe",
-                "twitter": "https://twitter.com/johndoe"
+                "linked": "https://www.linkedin.com/in/johndoe"
             },
             {
                 "id": 2,
@@ -18,17 +15,15 @@
                 "name": "Omkar Mandave",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
-                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/",
-                "twitter": "https://twitter.com/janesmith"
+                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
             },
             {
                 "id": 3,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/Deepak kamble.jpg",
                 "name": "Deepak Kamble",
                 "post": "Core Member",
-                "git": "https://github.com/alicejohnson",
-                "linked": "https://www.linkedin.com/in/alicejohnson",
-                "twitter": "https://twitter.com/alicejohnson"
+                "git": "https://github.com/jack8096",
+                "linked": "https://www.linkedin.com/in/deepak-kamble-21139325b"
             },
             {
                 "id": 4,
@@ -36,196 +31,229 @@
                 "name": "Jyoti Pal",
                 "post": "Core Member",
                 "git": "https://github.com/bobwilliams",
-                "linked": "https://www.linkedin.com/in/bobwilliams",
-                "twitter": "https://twitter.com/bobwilliams"
+                "linked": "https://www.linkedin.com/in/bobwilliams"
             }
         ],
         "Himanshu Bhoir": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Bhole",
-                "post": "App Head",
+                "image": "assets/Teams/Web Dev/HimanshuBhoir.jpg",
+                "name": "Himanshu Bhoir",
+                "post": "Web Head",
                 "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe",
-                "twitter": "https://twitter.com/johndoe"
+                "linked": "https://www.linkedin.com/in/johndoe"
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Bhoir",
-                "post": "Web Head",
-                "git": "https://github.com/janesmith",
-                "linked": "https://www.linkedin.com/in/janesmith",
-                "twitter": "https://twitter.com/janesmith"
+                "image": "assets/Teams/Web Dev/Aryan Nipane.png",
+                "name": "Aryan Nipane",
+                "post": "Co Head",
+                "git": "https://github.com/aaryannipane",
+                "linked": "https://www.linkedin.com/in/aryannipane/"
             },
             {
                 "id": 3,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Mishra",
-                "post": "AI/ML Head",
-                "git": "https://github.com/alicejohnson",
-                "linked": "https://www.linkedin.com/in/alicejohnson",
-                "twitter": "https://twitter.com/alicejohnson"
+                "image": "assets/Teams/Web Dev/Rashmi Choudhary.jpg",
+                "name": "Rashmi Choudhary",
+                "post": "Core Member",
+                "git": "https://github.com/rashmichoudhary13",
+                "linked": "https://www.linkedin.com/in/rashmi-choudhary-9670a225b"
             },
             {
                 "id": 4,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Kulkarni",
-                "post": "Teasure Head",
-                "git": "https://github.com/bobwilliams",
-                "linked": "https://www.linkedin.com/in/bobwilliams",
-                "twitter": "https://twitter.com/bobwilliams"
+                "image": "assets/Teams/Web Dev/Siddhesh Pakhare.jpg",
+                "name": "Siddhesh Pakhare",
+                "post": "Core Member",
+                "git": "https://github.com/iSiddhesh12",
+                "linked": "https://www.linkedin.com/in/siddhesh-pakhare-462970266/"
             },
             {
                 "id": 5,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Sacchi",
-                "post": "Creative Head",
-                "git": "https://github.com/evedavis",
-                "linked": "https://www.linkedin.com/in/evedavis",
-                "twitter": "https://twitter.com/evedavis"
+                "image": "assets/Teams/Web Dev/Pranav Ambadkar.jpeg",
+                "name": "Pranav Ambadkar",
+                "post": "Core Member",
+                "git": "https://github.com/pranavambadkar",
+                "linked": "https://www.linkedin.com/in/pranav-ambadkar-25298520a/"
+            },
+            {
+                "id": 6,
+                "image": "assets/Teams/Web Dev/Harshal Tupe.jpg",
+                "name": "Harshal Tupe",
+                "post": "Core Member",
+                "git": "https://github.com/harshaltupe12",
+                "linked": "https://www.linkedin.com/in/harshal-tupe-00130b204"
             }
         ],
         "Ritesh Mishra": [
             {
                 "id": 1,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Tanmay Bhole",
-                "post": "App Head",
+                "name": "Ritesh Mishra",
+                "post": "AI/ML Head",
                 "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe",
-                "twitter": "https://twitter.com/johndoe"
+                "linked": "https://www.linkedin.com/in/johndoe"
             },
             {
                 "id": 2,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Himanshu Bhoir",
-                "post": "Web Head",
-                "git": "https://github.com/janesmith",
-                "linked": "https://www.linkedin.com/in/janesmith",
-                "twitter": "https://twitter.com/janesmith"
+                "name": "Omkar Mandave",
+                "post": "Co Head",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
             },
             {
                 "id": 3,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Ritesh Mishra",
-                "post": "AI/ML Head",
-                "git": "https://github.com/alicejohnson",
-                "linked": "https://www.linkedin.com/in/alicejohnson",
-                "twitter": "https://twitter.com/alicejohnson"
-            },
-            {
-                "id": 4,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Shruti Kulkarni",
-                "post": "Teasure Head",
-                "git": "https://github.com/bobwilliams",
-                "linked": "https://www.linkedin.com/in/bobwilliams",
-                "twitter": "https://twitter.com/bobwilliams"
-            },
-            {
-                "id": 5,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Sacchi",
-                "post": "Creative Head",
-                "git": "https://github.com/evedavis",
-                "linked": "https://www.linkedin.com/in/evedavis",
-                "twitter": "https://twitter.com/evedavis"
+                "image": "assets/Teams/AI Dev/Sanjana Tikone.jpg",
+                "name": "Sanjana Tikone",
+                "post": "Core Member",
+                "git": "https://github.com/jamelesss",
+                "linked": "http://www.linkedin.com/in/sanjana-tikone-654201292"
             }
         ],
         "Shruti Kulkarni": [
             {
                 "id": 1,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Tanmay Bhole",
-                "post": "App Head",
+                "name": "Shruti Kulkarni",
+                "post": "Treasurer Head",
                 "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe",
-                "twitter": "https://twitter.com/johndoe"
+                "linked": "https://www.linkedin.com/in/johndoe"
+            },
+            {
+                "id": 2,
+                "image": "assets/Teams/Treasurer/Pravesh Lohar.jpg",
+                "name": "Pravesh Lohar",
+                "post": "Co Head",
+                "git": "https://github.com/janesmith",
+                "linked": "https://linkedin.com/in/pravesh-lohar21"
+            }
+        ],
+        "Sacchi Gadling": [
+            {
+                "id": 1,
+                "image": "assets/Teams/Creative/Saachi Gadling.png",
+                "name": "Sacchi Gadling",
+                "post": "Creative Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/johndoe"
             },
             {
                 "id": 2,
                 "image": "assets/Teams/App Dev/omk.png",
                 "name": "Himanshu Bhoir",
-                "post": "Web Head",
+                "post": "Co Head",
                 "git": "https://github.com/janesmith",
-                "linked": "https://www.linkedin.com/in/janesmith",
-                "twitter": "https://twitter.com/janesmith"
+                "linked": "https://www.linkedin.com/in/janesmith"
+            },
+            {
+                "id": 3,
+                "image": "assets/Teams/Creative/Siddhesh M.jpg",
+                "name": "Siddhesh Manoj Mhatre ",
+                "post": "Core Member",
+                "git": "https://github.com/alicejohnson",
+                "linked": "https://www.linkedin.com/in/siddhesh-mhatre-4891b3233"
+            },
+            {
+                "id": 4,
+                "image": "assets/Teams/Creative/Anturkar Ekta.jpeg",
+                "name": "Ekta Anturkar",
+                "post": "Core Member",
+                "git": "https://github.com/ektaAnt2002",
+                "linked": "https://www.linkedin.com/in/ekta-anturkar-b482b4282/"
+            }
+        ],
+        "Vibhanshu Dubey": [
+            {
+                "id": 1,
+                "image": "assets/Teams/Marketing/Vibhanshu Dubey.jpg",
+                "name": "Vibhanshu Dubey",
+                "post": "Marketing Head",
+                "git": "https://github.com/johndoe",
+                "linked": "https://www.linkedin.com/in/vibhanshu-dubey-0a692b284"
+            },
+            {
+                "id": 2,
+                "image": "assets/Teams/App Dev/omk.png",
+                "name": "Omkar Mandave",
+                "post": "Co Head",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
             },
             {
                 "id": 3,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Ritesh Mishra",
-                "post": "AI/ML Head",
+                "name": "Deepak Kamble",
+                "post": "Core Member",
                 "git": "https://github.com/alicejohnson",
-                "linked": "https://www.linkedin.com/in/alicejohnson",
-                "twitter": "https://twitter.com/alicejohnson"
-            },
-            {
-                "id": 4,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Shruti Kulkarni",
-                "post": "Teasure Head",
-                "git": "https://github.com/bobwilliams",
-                "linked": "https://www.linkedin.com/in/bobwilliams",
-                "twitter": "https://twitter.com/bobwilliams"
-            },
-            {
-                "id": 5,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Sacchi",
-                "post": "Creative Head",
-                "git": "https://github.com/evedavis",
-                "linked": "https://www.linkedin.com/in/evedavis",
-                "twitter": "https://twitter.com/evedavis"
+                "linked": "https://www.linkedin.com/in/alicejohnson"
             }
         ],
-        "Sacchi": [
+        "Anushka Kadam": [
             {
                 "id": 1,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Tanmay Bhole",
-                "post": "App Head",
-                "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe",
-                "twitter": "https://twitter.com/johndoe"
+                "name": "Anushka Kadam",
+                "post": "Media Head",
+                "git": "https://github.com/evedavis",
+                "linked": "https://www.linkedin.com/in/evedavis"
             },
             {
                 "id": 2,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Himanshu Bhoir",
-                "post": "Web Head",
-                "git": "https://github.com/janesmith",
-                "linked": "https://www.linkedin.com/in/janesmith",
-                "twitter": "https://twitter.com/janesmith"
+                "name": "Omkar Mandave",
+                "post": "Co Head",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
             },
             {
                 "id": 3,
+                "image": "assets/Teams/Media/Devesh Patil.jpg",
+                "name": "Devesh Patil",
+                "post": "Core Member",
+                "git": "https://github.com/rashmichoudhary13",
+                "linked": "https://www.linkedin.com/in/devesh-patil-113036246"
+            }
+        ],
+        "Kunal More": [
+            {
+                "id": 1,
                 "image": "assets/Teams/App Dev/omk.png",
-                "name": "Ritesh Mishra",
-                "post": "AI/ML Head",
-                "git": "https://github.com/alicejohnson",
-                "linked": "https://www.linkedin.com/in/alicejohnson",
-                "twitter": "https://twitter.com/alicejohnson"
+                "name": "Kunal More",
+                "post": "Event Head",
+                "git": "https://github.com/evedavis",
+                "linked": "https://www.linkedin.com/in/evedavis"
+            },
+            {
+                "id": 2,
+                "image": "assets/Teams/App Dev/omk.png",
+                "name": "Omkar Mandave",
+                "post": "Co Head",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
+            },
+            {
+                "id": 3,
+                "image": "assets/Teams/Events/Soubiya Mullaji.jpeg",
+                "name": "Soubiya Mullaji",
+                "post": "Core Member",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/soubiyamullaji"
             },
             {
                 "id": 4,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Shruti Kulkarni",
-                "post": "Teasure Head",
-                "git": "https://github.com/bobwilliams",
-                "linked": "https://www.linkedin.com/in/bobwilliams",
-                "twitter": "https://twitter.com/bobwilliams"
+                "image": "assets/Teams/Events/Sakshi Mokal.jpg",
+                "name": "Sakshi Mokal",
+                "post": "Core Member",
+                "git": "https://github.com/sakshimokal",
+                "linked": "https://www.linkedin.com/in/sakshi-mokal-532b07229"
             },
             {
-                "id": 5,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Sacchi",
-                "post": "Creative Head",
-                "git": "https://github.com/evedavis",
-                "linked": "https://www.linkedin.com/in/evedavis",
-                "twitter": "https://twitter.com/evedavis"
+                "id": 6,
+                "image": "assets/Teams/Events/Soham Sharma.jpg",
+                "name": "Soham Sharma",
+                "post": "Core Member",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://in.linkedin.com/in/soham-sharma-6b80b7229"
             }
         ]
     }

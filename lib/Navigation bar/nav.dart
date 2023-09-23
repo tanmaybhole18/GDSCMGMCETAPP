@@ -33,13 +33,9 @@ class AnimatedNotchBottomNavigationBar extends StatelessWidget {
         BottomBarItem(
           inActiveItem: Image.asset(
             'assets/Icons/icon.png',
-            height: 40,
-            width: 40,
           ),
           activeItem: Image.asset(
             'assets/Icons/icon.png',
-            height: 40,
-            width: 40,
           ),
           itemLabel: 'Page 2',
         ),
