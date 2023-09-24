@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import '../model/team_model.dart';
 import '../pages/Teammember.dart';
 
@@ -12,6 +13,22 @@ class TeamList extends StatefulWidget {
 }
 
 class _TeamListState extends State<TeamList> {
+  bool isButtonPressed = false;
+
+  // Function to play the animation and reset isButtonPressed
+  void playAnimation() async {
+    setState(() {
+      isButtonPressed = true;
+    });
+
+    // Delay to let the animation play
+    await Future.delayed(Duration(seconds: 3)); // Adjust the duration as needed
+
+    setState(() {
+      isButtonPressed = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Swiper(
@@ -155,45 +172,57 @@ class _TeamListState extends State<TeamList> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) =>
-                                TeamMemberDetailsPage(name: team.name),
-                          ),
-                        );
-                      },
-                      child: AnimatedContainer(
-                        height: 40,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          boxShadow: const [
-                            BoxShadow(
-                                color: Colors.blueAccent,
-                                offset: Offset(4, 4),
-                                blurRadius: 15,
-                                spreadRadius: 1),
-                            BoxShadow(
-                                color: Color.fromARGB(255, 210, 61, 237),
-                                offset: Offset(-4, -4),
-                                blurRadius: 15,
-                                spreadRadius: 1)
-                          ],
-                          color: Colors.blueAccent,
-                        ),
-                        duration: Duration(milliseconds: 200),
-                        child: Center(
-                          child: Text(
-                            "Team",
-                            style: GoogleFonts.forum(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                        playAnimation(); // Play the animation immediately
+
+                        // Delay the navigation using Future.delayed
+                        Future.delayed(Duration(seconds: 2), () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  TeamMemberDetailsPage(name: team.name),
                             ),
-                          ),
-                        ),
-                      ),
+                          );
+                        });
+                      },
+                      child: isButtonPressed == false
+                          ? AnimatedContainer(
+                              height: 40,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                boxShadow: const [
+                                  BoxShadow(
+                                      color: Colors.blueAccent,
+                                      offset: Offset(4, 4),
+                                      blurRadius: 15,
+                                      spreadRadius: 1),
+                                  BoxShadow(
+                                      color: Color.fromARGB(255, 210, 61, 237),
+                                      offset: Offset(-4, -4),
+                                      blurRadius: 15,
+                                      spreadRadius: 1)
+                                ],
+                                color: Colors.blueAccent,
+                              ),
+                              duration: Duration(milliseconds: 200),
+                              child: Center(
+                                child: Text(
+                                  "Team",
+                                  style: GoogleFonts.forum(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            )
+                          : Lottie.asset(
+                              'assets/Icons/animation.json', // Replace with your animation file path
+                              width: 80,
+                              height: 80,
+                              repeat: false,
+                            ),
                     ),
                   ],
                 )

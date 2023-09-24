@@ -7,11 +7,11 @@
                 "name": "Tanmay Bhole",
                 "post": "App Head",
                 "git": "https://github.com/tanmaybhole18",
-                "linked": "https://www.linkedin.com/public-profile/settings"
+                "linked": "https://www.linkedin.com/in/tanmay-bhole-0453a7262/"
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Omkar Mandave",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
@@ -27,11 +27,11 @@
             },
             {
                 "id": 4,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/Jyoti Pal.jpg",
                 "name": "Jyoti Pal",
                 "post": "Core Member",
                 "git": "https://github.com/bobwilliams",
-                "linked": "https://www.linkedin.com/in/bobwilliams"
+                "linked": "http://linkedin.com/in/jyoti-pal-4989b9292/"
             }
         ],
         "Himanshu Bhoir": [
@@ -40,8 +40,8 @@
                 "image": "assets/Teams/Web Dev/HimanshuBhoir.jpg",
                 "name": "Himanshu Bhoir",
                 "post": "Web Head",
-                "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe"
+                "git": "https://github.com/HimanshuBhoir",
+                "linked": "https://www.linkedin.com/in/himanshu-bhoir-34a9a01b9/"
             },
             {
                 "id": 2,
@@ -87,7 +87,7 @@
         "Ritesh Mishra": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Ritesh Mishra",
                 "post": "AI/ML Head",
                 "git": "https://github.com/johndoe",
@@ -95,7 +95,7 @@
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Omkar Mandave",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
@@ -108,12 +108,28 @@
                 "post": "Core Member",
                 "git": "https://github.com/jamelesss",
                 "linked": "http://www.linkedin.com/in/sanjana-tikone-654201292"
+            },
+            {
+                "id": 4,
+                "image": "assets/Teams/AI Dev/Indraynee SAWANT.jpg",
+                "name": "Indraynee Sawant ",
+                "post": "Core Member",
+                "git": "https://github.com/jamelesss",
+                "linked": "https://www.linkedin.com/in/indrayani-sawant-6769b9256"
+            },
+            {
+                "id": 5,
+                "image": "assets/Teams/AI Dev/Tejraj Jadhav.jpg",
+                "name": "Tejraj Jadhav",
+                "post": "Core Member",
+                "git": "https://github.com/jamelesss",
+                "linked": "https://www.linkedin.com/in/tejraj-jadhav-07a507260"
             }
         ],
         "Shruti Kulkarni": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Shruti Kulkarni",
                 "post": "Treasurer Head",
                 "git": "https://github.com/johndoe",
@@ -139,7 +155,7 @@
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Himanshu Bhoir",
                 "post": "Co Head",
                 "git": "https://github.com/janesmith",
@@ -160,6 +176,14 @@
                 "post": "Core Member",
                 "git": "https://github.com/ektaAnt2002",
                 "linked": "https://www.linkedin.com/in/ekta-anturkar-b482b4282/"
+            },
+            {
+                "id": 5,
+                "image": "assets/Teams/Creative/Vaidehi Chandre.jpeg",
+                "name": "Vaidehi Chandre",
+                "post": "Core Member",
+                "git": "https://github.com/ektaAnt2002",
+                "linked": "https://www.linkedin.com/in/vaidehi-chandre-9ab7a2212/"
             }
         ],
         "Vibhanshu Dubey": [
@@ -173,7 +197,7 @@
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Omkar Mandave",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
@@ -181,7 +205,7 @@
             },
             {
                 "id": 3,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Deepak Kamble",
                 "post": "Core Member",
                 "git": "https://github.com/alicejohnson",
@@ -191,19 +215,19 @@
         "Anushka Kadam": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Anushka Kadam",
                 "post": "Media Head",
                 "git": "https://github.com/evedavis",
-                "linked": "https://www.linkedin.com/in/evedavis"
+                "linked": "http://www.linkedin.com/in/anushka-kadam-66138b1ab"
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
-                "name": "Omkar Mandave",
+                "image": "assets/Teams/Media/Sejal Billur.jpeg",
+                "name": "Sejal Billur",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
-                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
+                "linked": "https://www.linkedin.com/in/sejal-billur-b76988287"
             },
             {
                 "id": 3,
@@ -212,12 +236,20 @@
                 "post": "Core Member",
                 "git": "https://github.com/rashmichoudhary13",
                 "linked": "https://www.linkedin.com/in/devesh-patil-113036246"
+            },
+            {
+                "id": 4,
+                "image": "assets/Teams/Media/Om Gharat.jpeg",
+                "name": "Om Gharat",
+                "post": "Core Member",
+                "git": "https://github.com/rashmichoudhary13",
+                "linked": "https://www.linkedin.com/in/om-gharat-a82aa31b0"
             }
         ],
         "Kunal More": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Kunal More",
                 "post": "Event Head",
                 "git": "https://github.com/evedavis",
@@ -225,7 +257,7 @@
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omk.png",
+                "image": "assets/Teams/App Dev/omkar.jpg",
                 "name": "Omkar Mandave",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
@@ -248,12 +280,36 @@
                 "linked": "https://www.linkedin.com/in/sakshi-mokal-532b07229"
             },
             {
-                "id": 6,
+                "id": 5,
                 "image": "assets/Teams/Events/Soham Sharma.jpg",
                 "name": "Soham Sharma",
                 "post": "Core Member",
                 "git": "https://github.com/OmkarM2003",
                 "linked": "https://in.linkedin.com/in/soham-sharma-6b80b7229"
+            },
+            {
+                "id": 6,
+                "image": "assets/Teams/Events/Vishakha Pingat.jpg",
+                "name": "Vishakha Pingat",
+                "post": "Core Member",
+                "git": "https://github.com/OmkarM2003",
+                "linked": "https://www.linkedin.com/in/vishakha-pingat-30175125a"
+            },
+            {
+                "id": 7,
+                "image": "assets/Teams/Events/Ronak Vaghela.jpg",
+                "name": "Ronak Waghela",
+                "post": "Core Member",
+                "git": "https://github.com/Ronak7501",
+                "linked": "https://www.linkedin.com/in/ronak-waghela-932ab0219/"
+            },
+            {
+                "id": 8,
+                "image": "assets/Teams/Events/Tejas Prasade.jpg",
+                "name": "Tejas Prasade ",
+                "post": "Core Member",
+                "git": "https://github.com/Ronak7501",
+                "linked": "http://www.linkedin.com/in/tejasprasade"
             }
         ]
     }

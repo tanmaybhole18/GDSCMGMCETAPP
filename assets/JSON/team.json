@@ -6,21 +6,21 @@
             "name": "Tanmay Bhole",
             "post": "App Head",
             "git": "https://github.com/tanmaybhole18",
-            "linked": "https://www.linkedin.com/public-profile/settings",
+            "linked": "https://www.linkedin.com/in/tanmay-bhole-0453a7262/",
             "twitter": "https://twitter.com/johndoe"
         },
         {
             "id": 2,
-            "image": "assets/Teams/App Dev/omk.png",
+            "image": "assets/Teams/Web Dev/HimanshuBhoir.jpg",
             "name": "Himanshu Bhoir",
             "post": "Web Head",
-            "git": "https://github.com/janesmith",
-            "linked": "https://www.linkedin.com/in/janesmith",
+            "git": "https://github.com/HimanshuBhoir",
+            "linked": "https://www.linkedin.com/in/himanshu-bhoir-34a9a01b9/",
             "twitter": "https://twitter.com/janesmith"
         },
         {
             "id": 3,
-            "image": "assets/Teams/App Dev/omk.png",
+            "image": "assets/Teams/App Dev/omkar.jpg",
             "name": "Ritesh Mishra",
             "post": "AI/ML Head",
             "git": "https://github.com/alicejohnson",
@@ -29,7 +29,7 @@
         },
         {
             "id": 4,
-            "image": "assets/Teams/App Dev/omk.png",
+            "image": "assets/Teams/App Dev/omkar.jpg",
             "name": "Shruti Kulkarni",
             "post": "Treasurer Head",
             "git": "https://github.com/bobwilliams",
@@ -56,16 +56,16 @@
         },
         {
             "id": 7,
-            "image": "assets/Teams/App Dev/omk.png",
+            "image": "assets/Teams/App Dev/omkar.jpg",
             "name": "Anushka Kadam",
             "post": "Media Head",
             "git": "https://github.com/evedavis",
-            "linked": "https://www.linkedin.com/in/evedavis",
+            "linked": "http://www.linkedin.com/in/anushka-kadam-66138b1ab",
             "twitter": "https://twitter.com/evedavis"
         },
         {
             "id": 8,
-            "image": "assets/Teams/App Dev/omk.png",
+            "image": "assets/Teams/App Dev/omkar.jpg",
             "name": "Kunal More",
             "post": "Event Head",
             "git": "https://github.com/evedavis",

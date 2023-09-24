@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^5.1.0
   auto_size_text: ^3.0.0
   path_provider: ^2.0.22
+  lottie: ^2.6.0
 
 
 
@@ -81,27 +82,39 @@ flutter:
    - assets/Icons/twitter.jpeg
    - assets/JSON/team.json
    - assets/Icons/icon.png
+   - assets/Icons/animation.json
+   - assets/Icons/animation1.json
+   - assets/Icons/animation2.json
+   - assets/Icons/animation3.json
    - assets/JSON/member.json
    - assets/Teams/App Dev/Tanmay Bhole.jpg
    - assets/Teams/App Dev/omkar.jpg
-   - assets/Teams/App Dev/omk.png
    - assets/Teams/App Dev/Deepak kamble.jpg
+   - assets/Teams/App Dev/Jyoti Pal.jpg
    - assets/Teams/Web Dev/HimanshuBhoir.jpg
    - assets/Teams/Web Dev/Aryan Nipane.png
    - assets/Teams/Web Dev/Harshal Tupe.jpg
    - assets/Teams/Web Dev/Pranav Ambadkar.jpeg
    - assets/Teams/Web Dev/Rashmi Choudhary.jpg
    - assets/Teams/Web Dev/Siddhesh Pakhare.jpg
+   - assets/Teams/AI Dev/Sanjana Tikone.jpg
+   - assets/Teams/AI Dev/Indraynee SAWANT.jpg
+   - assets/Teams/AI Dev/Tejraj Jadhav.jpg
    - assets/Teams/Marketing/Vibhanshu Dubey.jpg
    - assets/Teams/Creative/Saachi Gadling.png
    - assets/Teams/Creative/Anturkar Ekta.jpeg
    - assets/Teams/Creative/Siddhesh M.jpg
+   - assets/Teams/Creative/Vaidehi Chandre.jpeg
    - assets/Teams/Treasurer/Pravesh Lohar.jpg
    - assets/Teams/Events/Sakshi Mokal.jpg
    - assets/Teams/Events/Soubiya Mullaji.jpeg
    - assets/Teams/Events/Soham Sharma.jpg
-   - assets/Teams/AI Dev/Sanjana Tikone.jpg
+   - assets/Teams/Events/Vishakha Pingat.jpg
+   - assets/Teams/Events/Ronak Vaghela.jpg
+   - assets/Teams/Events/Tejas Prasade.jpg
+   - assets/Teams/Media/Sejal Billur.jpeg
    - assets/Teams/Media/Devesh Patil.jpg
+   - assets/Teams/Media/Om Gharat.jpeg
 
 
 
