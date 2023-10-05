@@ -87,19 +87,19 @@
         "Ritesh Mishra": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omkar.jpg",
+                "image": "assets/Teams/AI Dev/Ritesh Mishra.jpg",
                 "name": "Ritesh Mishra",
                 "post": "AI/ML Head",
                 "git": "https://github.com/johndoe",
-                "linked": "https://www.linkedin.com/in/johndoe"
+                "linked": "https://www.linkedin.com/in/ritesh-mishra-70ab7822a"
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omkar.jpg",
-                "name": "Omkar Mandave",
+                "image": "assets/Teams/AI Dev/Ayaaz Shekhani.jpg",
+                "name": "Ayaaz Shekhani",
                 "post": "Co Head",
-                "git": "https://github.com/OmkarM2003",
-                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
+                "git": "https://github.com/Ayaazshekhani",
+                "linked": "https://www.linkedin.com/in/ayaaz-shekhani-601115235/"
             },
             {
                 "id": 3,
@@ -164,7 +164,7 @@
             {
                 "id": 3,
                 "image": "assets/Teams/Creative/Siddhesh M.jpg",
-                "name": "Siddhesh Manoj Mhatre ",
+                "name": "Siddhesh Mhatre ",
                 "post": "Core Member",
                 "git": "https://github.com/alicejohnson",
                 "linked": "https://www.linkedin.com/in/siddhesh-mhatre-4891b3233"
@@ -184,6 +184,14 @@
                 "post": "Core Member",
                 "git": "https://github.com/ektaAnt2002",
                 "linked": "https://www.linkedin.com/in/vaidehi-chandre-9ab7a2212/"
+            },
+            {
+                "id": 6,
+                "image": "assets/Teams/Creative/Hemangi Patil.jpg",
+                "name": "Hemangi Patil",
+                "post": "Core Member",
+                "git": "https://github.com/Hemangi-Patil24",
+                "linked": "https://www.linkedin.com/in/hemangi-patil-b86852292"
             }
         ],
         "Vibhanshu Dubey": [
@@ -197,25 +205,17 @@
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omkar.jpg",
-                "name": "Omkar Mandave",
+                "image": "assets/Teams/Marketing/Vivek Shingne.jpg",
+                "name": "Vivek Shingne",
                 "post": "Co Head",
                 "git": "https://github.com/OmkarM2003",
-                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
-            },
-            {
-                "id": 3,
-                "image": "assets/Teams/App Dev/omkar.jpg",
-                "name": "Deepak Kamble",
-                "post": "Core Member",
-                "git": "https://github.com/alicejohnson",
-                "linked": "https://www.linkedin.com/in/alicejohnson"
+                "linked": "https://www.linkedin.com/in/vivek-shingne-349563233"
             }
         ],
         "Anushka Kadam": [
             {
                 "id": 1,
-                "image": "assets/Teams/App Dev/omkar.jpg",
+                "image": "assets/Teams/Media/Anushka Kadam.jpeg",
                 "name": "Anushka Kadam",
                 "post": "Media Head",
                 "git": "https://github.com/evedavis",
@@ -257,11 +257,11 @@
             },
             {
                 "id": 2,
-                "image": "assets/Teams/App Dev/omkar.jpg",
-                "name": "Omkar Mandave",
+                "image": "assets/Teams/Events/Arya Singasane.jpg",
+                "name": "Arya Singasane",
                 "post": "Co Head",
-                "git": "https://github.com/OmkarM2003",
-                "linked": "https://www.linkedin.com/in/omkar-mandave-598708260/"
+                "git": "https://github.com/aryasingasane",
+                "linked": "http://www.linkedin.com/in/arya-singasane-9b4a2a22a"
             },
             {
                 "id": 3,

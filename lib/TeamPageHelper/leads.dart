@@ -122,7 +122,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                       ),
                     ),
                   ).animate().fade(delay: const Duration(seconds: 1)),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Text(
@@ -209,7 +209,7 @@ class _LeadsState extends State<Leads> with SingleTickerProviderStateMixin {
                       ),
                     ),
                   ).animate().fade(delay: const Duration(seconds: 1)),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Text(

@@ -22,7 +22,7 @@ class _TeamListState extends State<TeamList> {
     });
 
     // Delay to let the animation play
-    await Future.delayed(Duration(seconds: 3)); // Adjust the duration as needed
+    await Future.delayed(const Duration(seconds: 3)); // Adjust the duration as needed
 
     setState(() {
       isButtonPressed = false;
@@ -53,7 +53,7 @@ class _TeamListState extends State<TeamList> {
                 color: Colors.grey.withOpacity(0.3),
                 spreadRadius: 2,
                 blurRadius: 5,
-                offset: Offset(0, 3),
+                offset: const Offset(0, 3),
               ),
             ],
           ),
@@ -175,7 +175,7 @@ class _TeamListState extends State<TeamList> {
                         playAnimation(); // Play the animation immediately
 
                         // Delay the navigation using Future.delayed
-                        Future.delayed(Duration(seconds: 2), () {
+                        Future.delayed(const Duration(seconds: 2), () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -205,7 +205,7 @@ class _TeamListState extends State<TeamList> {
                                 ],
                                 color: Colors.blueAccent,
                               ),
-                              duration: Duration(milliseconds: 200),
+                              duration: const Duration(milliseconds: 200),
                               child: Center(
                                 child: Text(
                                   "Team",

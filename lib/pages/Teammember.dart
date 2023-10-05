@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,6 +18,7 @@ class TeamMemberDetailsPage extends StatefulWidget {
 }
 
 class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
+  // ignore: non_constant_identifier_names
   List<Map<String, dynamic>> Mem = [];
   bool isLottieVisible =
       false; // Control the visibility of the Lottie animation
@@ -56,7 +58,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
                   Color(0xFF48A9C5),
@@ -86,7 +88,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                             color: Colors.black.withOpacity(0.2),
                             spreadRadius: 2,
                             blurRadius: 5,
-                            offset: Offset(0, 3),
+                            offset: const Offset(0, 3),
                           ),
                         ],
                       ),
@@ -131,7 +133,33 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                     ),
                                   ),
                                   child: ClipOval(
-                                    child: Image.asset(Mem[index]['image']),
+                                    child: GestureDetector(
+                                      onLongPress: () {
+                                        showDialog(
+                                          context: context,
+                                          builder: (context) {
+                                            return AlertDialog(
+                                              content: Image.asset(
+                                                Mem[index]['image'],
+                                                fit: BoxFit.contain,
+                                              ),
+                                              actions: [
+                                                TextButton(
+                                                  onPressed: () {
+                                                    Navigator.of(context)
+                                                        .pop(); // Close the dialog
+                                                  },
+                                                  child: const Text('Close'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        );
+                                      },
+                                      child: ClipOval(
+                                        child: Image.asset(Mem[index]['image']),
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 Image.asset(
@@ -141,30 +169,30 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                             Text(
                               Mem[index]['name'],
                               style: GoogleFonts.forum(
-                                color: Color(0xFF0962A3),
+                                color: const Color(0xFF0962A3),
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 8),
+                            const SizedBox(height: 8),
                             Text(
                               Mem[index]['post'],
                               style: GoogleFonts.forum(
-                                color: Color(0xFF48A9C5),
+                                color: const Color(0xFF48A9C5),
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 20),
+                            const SizedBox(height: 20),
                             Container(
                               width: 170,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(25),
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   colors: [
                                     Color(0xFFFFD700), // Gold
                                     Color(0xFFFFA500), // Orange
@@ -177,7 +205,7 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                     color: Colors.black.withOpacity(0.2),
                                     spreadRadius: 2,
                                     blurRadius: 5,
-                                    offset: Offset(0, 3),
+                                    offset: const Offset(0, 3),
                                   ),
                                 ],
                               ),
@@ -194,16 +222,16 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                               true; // Show Lottie animation
                                         });
 
-                                        Future.delayed(Duration(seconds: 3),
-                                            () {
+                                        Future.delayed(
+                                            const Duration(seconds: 3), () {
                                           setState(() {
                                             isLottieVisible =
                                                 false; // Hide Lottie animation
                                           });
                                         });
 
-                                        Future.delayed(Duration(seconds: 3),
-                                            () {
+                                        Future.delayed(
+                                            const Duration(seconds: 3), () {
                                           launchUrl(
                                             Uri.parse(Mem[index]['git']),
                                             mode:
@@ -218,15 +246,32 @@ class _TeamMemberDetailsPageState extends State<TeamMemberDetailsPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(width: 15),
+                                  const SizedBox(width: 15),
                                   Padding(
                                     padding: const EdgeInsets.all(7.0),
                                     child: GestureDetector(
                                       onTap: () {
-                                        launchUrl(
-                                          Uri.parse(Mem[index]['linked']),
-                                          mode: LaunchMode.externalApplication,
-                                        );
+                                        setState(() {
+                                          isLottieVisible =
+                                              true; // Show Lottie animation
+                                        });
+
+                                        Future.delayed(
+                                            const Duration(seconds: 3), () {
+                                          setState(() {
+                                            isLottieVisible =
+                                                false; // Hide Lottie animation
+                                          });
+                                        });
+
+                                        Future.delayed(
+                                            const Duration(seconds: 3), () {
+                                          launchUrl(
+                                            Uri.parse(Mem[index]['linked']),
+                                            mode:
+                                                LaunchMode.externalApplication,
+                                          );
+                                        });
                                       },
                                       child: Image.asset(
                                         'assets/Icons/linked.png',

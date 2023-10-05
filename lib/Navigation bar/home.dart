@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<Widget> bottomBarPages = [
     const TeamPage(),
     const EventPage(),
-    AboutPage(),
+    const AboutPage(),
   ];
 
   @override

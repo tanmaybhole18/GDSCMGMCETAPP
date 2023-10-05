@@ -17,7 +17,7 @@ class AboutPage extends StatelessWidget {
               : MediaQuery.of(context).size.height > 750
                   ? 3
                   : 2,
-          child: Heading()),
+          child: const Heading()),
       const AboutUs(),
       Expanded(
         flex: 1,
@@ -36,7 +36,7 @@ class AboutPage extends StatelessWidget {
       SizedBox(
         height: MediaQuery.of(context).size.height > 850 ? 110 : 90,
         child: Container(
-          color: Color.fromARGB(255, 255, 255, 255),
+          color: const Color.fromARGB(255, 255, 255, 255),
         ),
       )
     ]);
@@ -199,7 +199,7 @@ class SocialMediaLogo extends StatelessWidget {
         child: Container(
           height: 50,
           width: 50,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.black, // Background color
             shape: BoxShape.circle,
           ),
